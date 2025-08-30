@@ -1,0 +1,185 @@
+{
+  "common": {
+    "loading": "Inapakia...",
+    "error": "Kosa",
+    "success": "Mafanikio", 
+    "cancel": "Ghairi",
+    "confirm": "Thibitisha",
+    "save": "Hifadhi",
+    "delete": "Futa",
+    "edit": "Hariri",
+    "close": "Funga",
+    "retry": "Jaribu Tena",
+    "refresh": "Onyesha Upya",
+    "upgrade": "Pandisha",
+    "back": "Rudi",
+    "next": "Ifuatayo",
+    "previous": "Iliyotangulia",
+    "submit": "Wasilisha",
+    "continue": "Endelea"
+  },
+
+  "navigation": {
+    "home": "Nyumbani",
+    "quiz": "Jaribio", 
+    "dashboard": "Dashibodi",
+    "settings": "Mipangilio",
+    "pricing": "Bei",
+    "faq": "Maswali",
+    "login": "Ingia",
+    "register": "Jiunge",
+    "logout": "Toka"
+  },
+
+  "landing": {
+    "hero": {
+      "title": "QuizMate – Mwenzako wa Kusoma wa AI",
+      "subtitle": "Bandika maswali. Pata maelezo ya papo hapo na kadi za kusoma.",
+      "cta": "Anza Bure"
+    },
+    "features": {
+      "lowCost": {
+        "title": "Bei Nafuu",
+        "description": "Pata msaada wa kusoma unaotumia AI bila kuongeza gharama. Kuna kipengele cha bure."
+      },
+      "multilingual": {
+        "title": "Lugha Nyingi", 
+        "description": "Soma kwa Kiingereza, Kiindonesia, Kifilipino, au Kiswahili na msaada wa AI wa asili."
+      },
+      "offline": {
+        "title": "Ukaguzi Bila Mtandao",
+        "description": "Pakua kadi za kusoma kwa vipindi vya kusoma bila mtandao mahali popote, wakati wowote."
+      }
+    },
+    "pricing": {
+      "title": "Bei rahisi na wazi",
+      "subtitle": "Chagua mpango unaokufaa",
+      "free": {
+        "title": "Bure",
+        "price": "$0",
+        "period": "milele",
+        "features": [
+          "Maswali 5 kwa siku",
+          "Maelezo ya kimsingi ya AI", 
+          "Kadi za kawaida za kusoma",
+          "Msaada wa jamii"
+        ]
+      },
+      "pro": {
+        "title": "Mkuu", 
+        "price": "$2.99",
+        "period": "kwa mwezi",
+        "features": [
+          "Maswali yasiyo na kikomo",
+          "Usindikaji wa kipaumbele wa AI",
+          "Kadi za hali ya juu za kusoma",
+          "Uchambuzi wa kina",
+          "Msaada wa kipaumbele",
+          "Ufikiaji wa mapema wa vipengele vipya"
+        ],
+        "popular": "Maarufu Zaidi"
+      }
+    }
+  },
+
+  "auth": {
+    "login": {
+      "title": "Karibu tena",
+      "subtitle": "Ingia kwenye akaunti yako ili uendelee kusoma",
+      "email": "Anwani ya barua pepe",
+      "password": "Nenosiri",
+      "submit": "Ingia",
+      "forgotPassword": "Umesahau nenosiri lako?",
+      "noAccount": "Huna akaunti?",
+      "signUp": "Jiunge",
+      "orContinueWith": "Au endelea na",
+      "google": "Endelea na Google"
+    },
+    "register": {
+      "title": "Unda akaunti yako",
+      "subtitle": "Jiunge na maelfu ya wanafunzi wanaoboresha masomo yao kwa AI",
+      "name": "Jina kamili",
+      "email": "Anwani ya barua pepe", 
+      "password": "Nenosiri",
+      "confirmPassword": "Thibitisha nenosiri",
+      "submit": "Unda Akaunti",
+      "hasAccount": "Una akaunti tayari?",
+      "signIn": "Ingia"
+    }
+  },
+
+  "quiz": {
+    "title": "Msaidizi wa Kusoma wa AI", 
+    "subtitle": "Pata maelezo ya papo hapo na kadi za kusoma kwa swali lolote",
+    "form": {
+      "questionText": "Maandishi ya Swali",
+      "questionPlaceholder": "Ingiza swali lako hapa... (upeo wa herufi 4000)",
+      "orUploadFile": "Au Pakia Faili",
+      "language": "Lugha",
+      "autoDetect": "Tambua kiotomatiki",
+      "subject": "Somo (si lazima)",
+      "subjectPlaceholder": "mfano Hisabati", 
+      "grade": "Daraja (si lazima)",
+      "gradePlaceholder": "mfano Daraja la 10",
+      "generate": "Tengeneza Jibu"
+    },
+    "generating": "Inajibu...",
+    "usage": {
+      "remaining": "maswali yaliyobaki leo",
+      "upgradeRequired": "Kikomo cha kila siku kimefikiwa. Tafadhali pandisha hadi Pro kwa ufikiaji usio na kikomo."
+    },
+    "result": {
+      "answer": "Jibu",
+      "explanation": "Maelezo", 
+      "flashcards": "Kadi za Kusoma",
+      "saveFlashcards": "Hifadhi Kadi za Kusoma"
+    }
+  },
+
+  "dashboard": {
+    "title": "Dashibodi",
+    "subtitle": "Fuatilia maendeleo yako ya kusoma na endelea kusoma",
+    "newQuestion": "Swali Jipya",
+    "stats": {
+      "thisWeek": "Wiki Hii",
+      "cardsStudied": "Kadi Zilizosomwa", 
+      "accuracy": "Usahihi",
+      "dayStreak": "Mfululizo wa Siku"
+    },
+    "recentQuestions": {
+      "title": "Maswali ya Hivi Karibuni",
+      "description": "Maswali yako ya hivi karibuni na majibu ya AI"
+    }
+  },
+
+  "settings": {
+    "title": "Mipangilio",
+    "subtitle": "Dhibiti akaunti yako, malipo, na mapendeleo", 
+    "tabs": {
+      "profile": "Wasifu",
+      "billing": "Malipo",
+      "usage": "Matumizi"
+    },
+    "profile": {
+      "title": "Taarifa za Wasifu",
+      "description": "Sasisha maelezo ya akaunti yako na mapendeleo",
+      "email": "Anwani ya Barua Pepe",
+      "displayName": "Jina la Kuonyesha",
+      "language": "Lugha / Eneo", 
+      "saveChanges": "Hifadhi Mabadiliko"
+    }
+  },
+
+  "errors": {
+    "generic": "Kuna kitu kimekosea. Tafadhali jaribu tena.",
+    "network": "Kosa la mtandao. Angalia muunganisho wako na ujaribu tena.",
+    "unauthorized": "Unahitaji kuingia ili kufikia kipengele hiki."
+  },
+
+  "time": {
+    "justNow": "Sasa hivi",
+    "minutesAgo": "dakika {count} zilizopita", 
+    "hoursAgo": "masaa {count} yaliyopita",
+    "daysAgo": "siku {count} zilizopita"
+  }
+}

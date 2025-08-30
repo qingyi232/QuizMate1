@@ -1,0 +1,21 @@
+content,subject,grade,language,answer,explanation,tags
+"What does the concept of 'opportunity cost' represent in economics?
+A) The monetary cost of a decision
+B) The value of the next best alternative foregone
+C) The total cost of production
+D) The cost of borrowing money","Economics","University","en","B) The value of the next best alternative foregone","Opportunity cost is a fundamental economic concept representing the value of the best alternative that must be given up when making a choice. It reflects the trade-offs inherent in any decision.","economics,opportunity-cost,choice,trade-offs"
+"宏观经济学中，GDP的计算方法不包括：
+A) 支出法
+B) 收入法
+C) 生产法
+D) 投资法","宏观经济学","大学","zh-CN","D) 投资法","GDP的三种主要计算方法是：支出法(从需求角度)、收入法(从分配角度)和生产法(从供给角度)。没有所谓的'投资法'。","宏观经济学,GDP,国民经济核算,经济指标"
+"According to Maslow's hierarchy of needs, which need must be satisfied first?
+A) Self-actualization
+B) Esteem needs
+C) Physiological needs
+D) Safety needs","Psychology","University","en","C) Physiological needs","In Maslow's hierarchy, physiological needs (food, water, shelter, sleep) form the base of the pyramid and must be satisfied before higher-level needs can be pursued.","psychology,maslow,motivation,human-needs"
+"认知心理学中，工作记忆的容量限制大约是：
+A) 5±2个项目
+B) 7±2个项目
+C) 9±2个项目
+D) 11±2个项目","认知心理学","大学","zh-CN","B) 7±2个项目","根据George Miller的经典研究，人类工作记忆的容量限制大约是7±2个信息单元，这被称为'神奇数字7'。现代研究认为可能更接近4±1个。","认知心理学,工作记忆,认知容量,信息处理"

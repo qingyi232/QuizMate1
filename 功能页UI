@@ -1,0 +1,53 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { Card } from "@/components/ui/card";
+
+export default function FeaturesPage() {
+  const features = [
+    {
+      title: "AI 智能解题",
+      desc: "输入题目，AI 自动解析，提供详细讲解和答案。",
+    },
+    {
+      title: "学习模式多样",
+      desc: "刷题模式、测验模式、模拟考试，全面提升学习效率。",
+    },
+    {
+      title: "多语言支持",
+      desc: "支持英语、印尼语、菲律宾语、斯瓦西里语，覆盖全球学生。",
+    },
+    {
+      title: "上传试卷解析",
+      desc: "上传 PDF/Word，AI 自动识别并生成答案解析。",
+    },
+    {
+      title: "学习进度报告",
+      desc: "智能统计学习时间、正确率、知识薄弱点。",
+    },
+    {
+      title: "个性化推荐",
+      desc: "根据学习情况，智能推荐下一步学习方向。",
+    },
+  ];
+
+  return (
+    <div className="bg-gradient-to-b from-white to-blue-50 py-20 px-6">
+      <h1 className="text-4xl font-bold text-center text-blue-600 mb-12">
+        平台功能
+      </h1>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        {features.map((f, i) => (
+          <motion.div
+            key={i}
+            whileHover={{ scale: 1.05 }}
+            className="bg-white rounded-2xl shadow-lg p-6"
+          >
+            <h3 className="text-xl font-semibold text-blue-600 mb-4">{f.title}</h3>
+            <p className="text-gray-600">{f.desc}</p>
+          </motion.div>
+        ))}
+      </div>
+    </div>
+  );
+}

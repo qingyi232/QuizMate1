@@ -1,0 +1,11 @@
+content,subject,grade,language,answer,explanation,tags
+"In structural engineering, what is the primary purpose of reinforcement in reinforced concrete?
+A) To increase compressive strength
+B) To provide tensile strength
+C) To reduce weight
+D) To improve thermal properties","Civil Engineering","Engineering School","en","B) To provide tensile strength","Concrete is strong in compression but weak in tension. Steel reinforcement is added to provide tensile strength, creating a composite material that can resist both compressive and tensile forces.","civil-engineering,structural,concrete,materials"
+"电力系统中，三相对称负载星形连接时，线电压与相电压的关系是：
+A) 线电压 = 相电压
+B) 线电压 = √2 × 相电压
+C) 线电压 = √3 × 相电压
+D) 线电压 = 2 × 相电压","电气工程","工程学院","zh-CN","C) 线电压 = √3 × 相电压","在三相对称系统的星形连接中，线电压是两相电压的矢量差，其大小等于相电压乘以√3，相位超前相电压30°。","电气工程,三相电路,电压关系,电力系统"

@@ -1,0 +1,11 @@
+content,subject,grade,language,answer,explanation,tags
+"What is the derivative of f(x) = x³ + 2x² - 5x + 1?
+A) 3x² + 4x - 5
+B) 3x² + 2x - 5
+C) x⁴ + 2x³ - 5x² + x
+D) 3x² + 4x + 5","Calculus","University","en","A) 3x² + 4x - 5","Using the power rule for differentiation: d/dx(x³) = 3x², d/dx(2x²) = 4x, d/dx(-5x) = -5, d/dx(1) = 0. Therefore, f'(x) = 3x² + 4x - 5.","calculus,derivative,differentiation,power-rule"
+"线性代数中，矩阵A可逆的充分必要条件是：
+A) det(A) = 1
+B) det(A) ≠ 0
+C) det(A) > 0
+D) A是对称矩阵","线性代数","大学","zh-CN","B) det(A) ≠ 0","方阵A可逆的充分必要条件是其行列式det(A)不等于零。当det(A) = 0时，矩阵是奇异的（不可逆的）。","线性代数,矩阵,可逆性,行列式"

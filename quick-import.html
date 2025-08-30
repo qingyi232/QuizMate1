@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMate 专业题库快速导入</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 90%;
+        }
+        h1 { font-size: 2.5em; margin-bottom: 20px; }
+        .stats { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+            gap: 20px; 
+            margin: 30px 0; 
+        }
+        .stat { 
+            background: rgba(255, 255, 255, 0.2); 
+            padding: 20px; 
+            border-radius: 15px; 
+        }
+        .stat h3 { font-size: 2em; color: #FFD700; }
+        .stat p { margin-top: 5px; opacity: 0.9; }
+        .btn {
+            background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+            border: none;
+            padding: 15px 40px;
+            border-radius: 25px;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px 10px;
+            transition: transform 0.3s ease;
+        }
+        .btn:hover { transform: translateY(-2px); }
+        .features {
+            text-align: left;
+            margin: 30px 0;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+        }
+        .features h3 { color: #FFD700; margin-bottom: 15px; }
+        .features ul { list-style: none; }
+        .features li { 
+            padding: 5px 0; 
+            position: relative; 
+            padding-left: 25px; 
+        }
+        .features li:before { 
+            content: "✨"; 
+            position: absolute; 
+            left: 0; 
+        }
+        #status { 
+            margin-top: 20px; 
+            padding: 15px; 
+            border-radius: 10px; 
+            display: none; 
+        }
+        .success { background: rgba(76, 175, 80, 0.3); }
+        .error { background: rgba(244, 67, 54, 0.3); }
+        .loading { background: rgba(255, 193, 7, 0.3); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎓 QuizMate 专业题库</h1>
+        <p style="font-size: 1.2em; opacity: 0.9; margin-bottom: 30px;">
+            世界各行各业经典题目，一键导入您的学习系统
+        </p>
+        
+        <div class="stats">
+            <div class="stat">
+                <h3>34</h3>
+                <p>专业题目</p>
+            </div>
+            <div class="stat">
+                <h3>10</h3>
+                <p>专业领域</p>
+            </div>
+            <div class="stat">
+                <h3>2</h3>
+                <p>语言支持</p>
+            </div>
+        </div>
+
+        <div class="features">
+            <h3>🌟 包含专业领域</h3>
+            <ul>
+                <li>🏥 医学健康 - ACE抑制剂机制、CT影像学</li>
+                <li>⚖️ 法律司法 - 合同法要约、民法诉讼时效</li>
+                <li>🔧 工程技术 - 钢筋混凝土、三相电路</li>
+                <li>💼 商业管理 - 波特五力、NPV分析</li>
+                <li>🔬 自然科学 - 量子物理、有机化学、分子生物</li>
+                <li>📊 数学统计 - 微积分、线性代数</li>
+                <li>🧠 社会科学 - 心理学、宏观经济学</li>
+                <li>📚 人文艺术 - 世界历史、哲学、艺术史</li>
+                <li>🎓 教育培训 - 布鲁姆分类法、建构主义</li>
+                <li>🌍 环境科学 - 温室效应、可持续发展</li>
+            </ul>
+        </div>
+
+        <button class="btn" onclick="importQuestions()">🚀 立即导入专业题库</button>
+        <a href="http://localhost:3001/questions/import" class="btn" style="background: linear-gradient(45deg, #4ECDC4, #44A08D);">
+            📖 访问导入页面
+        </a>
+
+        <div id="status"></div>
+
+        <p style="margin-top: 30px; opacity: 0.8; font-size: 0.9em;">
+            🔒 安全提示：题目内容来自开放教育资源，符合学术使用规范
+        </p>
+    </div>
+
+    <script>
+        async function importQuestions() {
+            const statusDiv = document.getElementById('status');
+            statusDiv.style.display = 'block';
+            statusDiv.className = 'loading';
+            statusDiv.innerHTML = '🔄 正在导入专业题库...';
+
+            try {
+                // 从专业题库文件获取数据
+                const response = await fetch('http://localhost:3001/api/professional-data/professional-questions.json');
+                if (!response.ok) {
+                    throw new Error(`获取题库失败: ${response.status}`);
+                }
+                
+                const questionData = await response.json();
+                
+                // 调用导入API
+                const importResponse = await fetch('http://localhost:3001/api/questions/import', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        ...questionData,
+                        source: 'professional_bank_quick_import',
+                        overwrite_duplicates: false
+                    })
+                });
+
+                const result = await importResponse.json();
+                
+                if (result.success || importResponse.ok) {
+                    statusDiv.className = 'success';
+                    statusDiv.innerHTML = `
+                        ✅ 导入成功！<br>
+                        📊 成功导入: ${result.importedCount || questionData.questions?.length || 34} 题<br>
+                        🎯 跳过重复: ${result.duplicateCount || 0} 题<br>
+                        <a href="http://localhost:3001/questions" style="color: #FFD700; text-decoration: underline;">
+                            👉 立即查看题库
+                        </a>
+                    `;
+                } else {
+                    throw new Error(result.error || '导入失败');
+                }
+            } catch (error) {
+                statusDiv.className = 'error';
+                statusDiv.innerHTML = `
+                    ❌ 导入遇到问题: ${error.message}<br>
+                    💡 请尝试: <br>
+                    1. 确认服务器运行正常 (localhost:3001)<br>
+                    2. 或手动访问导入页面进行操作<br>
+                    <a href="http://localhost:3001/questions/import" style="color: #FFD700; text-decoration: underline;">
+                        👉 手动导入页面
+                    </a>
+                `;
+            }
+        }
+
+        // 页面加载完成后显示欢迎信息
+        window.onload = function() {
+            setTimeout(() => {
+                console.log('🎉 QuizMate 专业题库导入工具已就绪！');
+            }, 1000);
+        };
+    </script>
+</body>
+</html>

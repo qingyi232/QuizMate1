@@ -1,0 +1,4 @@
+content,subject,grade,language,answer,explanation,tags
+"What is the capital of Japan?",Geography,"Elementary",en,Tokyo,"Tokyo is the capital and largest city of Japan.","geography,capitals,asia"
+"计算：25 × 4 = ?",数学,小学,zh-CN,100,"25乘以4等于100。可以用分解法：25×4 = 25×(2×2) = (25×2)×2 = 50×2 = 100","数学,乘法,计算"
+"True or False: Python is a programming language",Computer Science,"High School",en,True,"Python is indeed a popular programming language known for its simplicity and versatility.","programming,python,technology"

@@ -1,0 +1,185 @@
+{
+  "common": {
+    "loading": "Memuat...",
+    "error": "Kesalahan",
+    "success": "Berhasil", 
+    "cancel": "Batal",
+    "confirm": "Konfirmasi",
+    "save": "Simpan",
+    "delete": "Hapus",
+    "edit": "Edit",
+    "close": "Tutup",
+    "retry": "Coba Lagi",
+    "refresh": "Segarkan",
+    "upgrade": "Upgrade",
+    "back": "Kembali",
+    "next": "Selanjutnya",
+    "previous": "Sebelumnya",
+    "submit": "Kirim",
+    "continue": "Lanjutkan"
+  },
+
+  "navigation": {
+    "home": "Beranda",
+    "quiz": "Kuis", 
+    "dashboard": "Dashboard",
+    "settings": "Pengaturan",
+    "pricing": "Harga",
+    "faq": "FAQ",
+    "login": "Masuk",
+    "register": "Daftar",
+    "logout": "Keluar"
+  },
+
+  "landing": {
+    "hero": {
+      "title": "QuizMate – Teman Belajar AI Anda",
+      "subtitle": "Tempel pertanyaan. Dapatkan penjelasan & kartu belajar instan.",
+      "cta": "Mulai Gratis"
+    },
+    "features": {
+      "lowCost": {
+        "title": "Biaya Rendah",
+        "description": "Dapatkan bantuan belajar bertenaga AI tanpa menguras kantong. Tersedia tier gratis."
+      },
+      "multilingual": {
+        "title": "Multi-bahasa", 
+        "description": "Belajar dalam bahasa Indonesia, Inggris, Filipino, atau Swahili dengan dukungan AI asli."
+      },
+      "offline": {
+        "title": "Review Offline",
+        "description": "Unduh kartu belajar untuk sesi belajar offline kapan saja, di mana saja."
+      }
+    },
+    "pricing": {
+      "title": "Harga yang sederhana dan transparan",
+      "subtitle": "Pilih paket yang sesuai untuk Anda",
+      "free": {
+        "title": "Gratis",
+        "price": "$0",
+        "period": "selamanya",
+        "features": [
+          "5 pertanyaan per hari",
+          "Penjelasan AI dasar", 
+          "Kartu belajar standar",
+          "Dukungan komunitas"
+        ]
+      },
+      "pro": {
+        "title": "Pro", 
+        "price": "$2.99",
+        "period": "per bulan",
+        "features": [
+          "Pertanyaan tidak terbatas",
+          "Pemrosesan AI prioritas",
+          "Kartu belajar lanjutan",
+          "Analitik detail",
+          "Dukungan prioritas",
+          "Akses awal ke fitur baru"
+        ],
+        "popular": "Paling Populer"
+      }
+    }
+  },
+
+  "auth": {
+    "login": {
+      "title": "Selamat datang kembali",
+      "subtitle": "Masuk ke akun Anda untuk melanjutkan belajar",
+      "email": "Alamat email",
+      "password": "Kata sandi",
+      "submit": "Masuk",
+      "forgotPassword": "Lupa kata sandi?",
+      "noAccount": "Belum punya akun?",
+      "signUp": "Daftar",
+      "orContinueWith": "Atau lanjutkan dengan",
+      "google": "Lanjutkan dengan Google"
+    },
+    "register": {
+      "title": "Buat akun Anda",
+      "subtitle": "Bergabunglah dengan ribuan siswa yang meningkatkan pembelajaran mereka dengan AI",
+      "name": "Nama lengkap",
+      "email": "Alamat email", 
+      "password": "Kata sandi",
+      "confirmPassword": "Konfirmasi kata sandi",
+      "submit": "Buat Akun",
+      "hasAccount": "Sudah punya akun?",
+      "signIn": "Masuk"
+    }
+  },
+
+  "quiz": {
+    "title": "Asisten Belajar AI", 
+    "subtitle": "Dapatkan penjelasan instan dan kartu belajar untuk pertanyaan apa pun",
+    "form": {
+      "questionText": "Teks Pertanyaan",
+      "questionPlaceholder": "Masukkan pertanyaan Anda di sini... (maks 4000 karakter)",
+      "orUploadFile": "Atau Upload File",
+      "language": "Bahasa",
+      "autoDetect": "Deteksi otomatis",
+      "subject": "Mata pelajaran (opsional)",
+      "subjectPlaceholder": "mis. Matematika", 
+      "grade": "Kelas (opsional)",
+      "gradePlaceholder": "mis. Kelas 10",
+      "generate": "Buat Jawaban"
+    },
+    "generating": "Membuat Jawaban...",
+    "usage": {
+      "remaining": "pertanyaan tersisa hari ini",
+      "upgradeRequired": "Batas harian tercapai. Silakan upgrade ke Pro untuk akses tidak terbatas."
+    },
+    "result": {
+      "answer": "Jawaban",
+      "explanation": "Penjelasan", 
+      "flashcards": "Kartu Belajar",
+      "saveFlashcards": "Simpan Kartu Belajar"
+    }
+  },
+
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Lacak kemajuan belajar Anda dan lanjutkan belajar",
+    "newQuestion": "Pertanyaan Baru",
+    "stats": {
+      "thisWeek": "Minggu Ini",
+      "cardsStudied": "Kartu Dipelajari", 
+      "accuracy": "Akurasi",
+      "dayStreak": "Hari Beruntun"
+    },
+    "recentQuestions": {
+      "title": "Pertanyaan Terkini",
+      "description": "Pertanyaan terbaru Anda dan jawaban AI"
+    }
+  },
+
+  "settings": {
+    "title": "Pengaturan",
+    "subtitle": "Kelola akun, tagihan, dan preferensi Anda", 
+    "tabs": {
+      "profile": "Profil",
+      "billing": "Tagihan",
+      "usage": "Penggunaan"
+    },
+    "profile": {
+      "title": "Informasi Profil",
+      "description": "Perbarui detail akun dan preferensi Anda",
+      "email": "Alamat Email",
+      "displayName": "Nama Tampilan",
+      "language": "Bahasa / Lokalisasi", 
+      "saveChanges": "Simpan Perubahan"
+    }
+  },
+
+  "errors": {
+    "generic": "Terjadi kesalahan. Silakan coba lagi.",
+    "network": "Kesalahan jaringan. Periksa koneksi Anda dan coba lagi.",
+    "unauthorized": "Anda perlu masuk untuk mengakses fitur ini."
+  },
+
+  "time": {
+    "justNow": "Baru saja",
+    "minutesAgo": "{count} menit lalu", 
+    "hoursAgo": "{count} jam lalu",
+    "daysAgo": "{count} hari lalu"
+  }
+}

@@ -1,0 +1,36 @@
+"use client";
+
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Card, CardContent } from "@/components/ui/card";
+
+export default function AuthPage() {
+  const [isLogin, setIsLogin] = useState(true);
+
+  return (
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-100 to-green-100">
+      <Card className="w-full max-w-md shadow-lg rounded-2xl">
+        <CardContent className="p-6">
+          <h2 className="text-2xl font-bold text-center mb-6 text-blue-600">
+            {isLogin ? "登录 QuizMate" : "注册 QuizMate"}
+          </h2>
+          <form className="space-y-4">
+            {!isLogin && <Input placeholder="用户名" />}
+            <Input type="email" placeholder="邮箱" />
+            <Input type="password" placeholder="密码" />
+            <Button className="w-full bg-blue-500 text-white rounded-xl py-3">
+              {isLogin ? "登录" : "注册"}
+            </Button>
+          </form>
+          <p
+            className="text-center text-sm text-gray-600 mt-4 cursor-pointer hover:underline"
+            onClick={() => setIsLogin(!isLogin)}
+          >
+            {isLogin ? "还没有账号？点击注册" : "已有账号？点击登录"}
+          </p>
+        </CardContent>
+      </Card>
+    </div>
+  );
+}

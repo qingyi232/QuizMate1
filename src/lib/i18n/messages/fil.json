@@ -1,0 +1,185 @@
+{
+  "common": {
+    "loading": "Naglo-load...",
+    "error": "Mali",
+    "success": "Tagumpay", 
+    "cancel": "Kanselahin",
+    "confirm": "Kumpirmahin",
+    "save": "I-save",
+    "delete": "Tanggalin",
+    "edit": "I-edit",
+    "close": "Isara",
+    "retry": "Subukan Ulit",
+    "refresh": "I-refresh",
+    "upgrade": "Mag-upgrade",
+    "back": "Bumalik",
+    "next": "Susunod",
+    "previous": "Nakaraan",
+    "submit": "Ipasa",
+    "continue": "Magpatuloy"
+  },
+
+  "navigation": {
+    "home": "Home",
+    "quiz": "Quiz", 
+    "dashboard": "Dashboard",
+    "settings": "Settings",
+    "pricing": "Presyo",
+    "faq": "FAQ",
+    "login": "Mag-sign In",
+    "register": "Magsimula",
+    "logout": "Mag-sign Out"
+  },
+
+  "landing": {
+    "hero": {
+      "title": "QuizMate – Ang Inyong AI Study Buddy",
+      "subtitle": "Mag-paste ng mga tanong. Makakuha ng instant na paliwanag at flashcards.",
+      "cta": "Magsimula nang Libre"
+    },
+    "features": {
+      "lowCost": {
+        "title": "Mababang Gastos",
+        "description": "Makakuha ng AI-powered na tulong sa pag-aaral nang hindi masyadong gastos. May libreng tier."
+      },
+      "multilingual": {
+        "title": "Multi-wika", 
+        "description": "Mag-aral sa English, Indonesian, Filipino, o Swahili na may native AI support."
+      },
+      "offline": {
+        "title": "Offline Review",
+        "description": "I-download ang mga flashcards para sa offline study sessions kahit saan, kahit kailan."
+      }
+    },
+    "pricing": {
+      "title": "Simple at transparent na pricing",
+      "subtitle": "Piliin ang plan na swak sa inyo",
+      "free": {
+        "title": "Libre",
+        "price": "$0",
+        "period": "magpakailanman",
+        "features": [
+          "5 tanong kada araw",
+          "Basic AI explanations", 
+          "Standard flashcards",
+          "Community support"
+        ]
+      },
+      "pro": {
+        "title": "Pro", 
+        "price": "$2.99",
+        "period": "bawat buwan",
+        "features": [
+          "Unlimited na mga tanong",
+          "Priority AI processing",
+          "Advanced flashcards",
+          "Detailed analytics",
+          "Priority support",
+          "Early access sa mga bagong features"
+        ],
+        "popular": "Pinakasikat"
+      }
+    }
+  },
+
+  "auth": {
+    "login": {
+      "title": "Welcome back",
+      "subtitle": "Mag-sign in sa inyong account para magpatuloy sa pag-aaral",
+      "email": "Email address",
+      "password": "Password",
+      "submit": "Mag-Sign In",
+      "forgotPassword": "Nakalimutan ang password?",
+      "noAccount": "Walang account?",
+      "signUp": "Mag-sign up",
+      "orContinueWith": "O magpatuloy gamit ang",
+      "google": "Magpatuloy gamit ang Google"
+    },
+    "register": {
+      "title": "Gumawa ng inyong account",
+      "subtitle": "Sumali sa libu-libong estudyante na nag-iimprove ng kanilang pag-aaral gamit ang AI",
+      "name": "Buong pangalan",
+      "email": "Email address", 
+      "password": "Password",
+      "confirmPassword": "Kumpirmahin ang password",
+      "submit": "Gumawa ng Account",
+      "hasAccount": "May account na?",
+      "signIn": "Mag-sign in"
+    }
+  },
+
+  "quiz": {
+    "title": "AI Study Assistant", 
+    "subtitle": "Makakuha ng instant na paliwanag at flashcards para sa anumang tanong",
+    "form": {
+      "questionText": "Text ng Tanong",
+      "questionPlaceholder": "Ilagay ang inyong tanong dito... (max 4000 characters)",
+      "orUploadFile": "O Mag-upload ng File",
+      "language": "Wika",
+      "autoDetect": "Auto-detect",
+      "subject": "Subject (optional)",
+      "subjectPlaceholder": "hal. Mathematics", 
+      "grade": "Grade (optional)",
+      "gradePlaceholder": "hal. Grade 10",
+      "generate": "Gumawa ng Sagot"
+    },
+    "generating": "Gumagawa ng Sagot...",
+    "usage": {
+      "remaining": "mga tanong na natitira ngayong araw",
+      "upgradeRequired": "Naabot na ang daily limit. Mag-upgrade sa Pro para sa unlimited access."
+    },
+    "result": {
+      "answer": "Sagot",
+      "explanation": "Paliwanag", 
+      "flashcards": "Flashcards",
+      "saveFlashcards": "I-save ang mga Flashcards"
+    }
+  },
+
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "I-track ang inyong learning progress at magpatuloy sa pag-aaral",
+    "newQuestion": "Bagong Tanong",
+    "stats": {
+      "thisWeek": "Linggong Ito",
+      "cardsStudied": "Mga Cards na Na-study", 
+      "accuracy": "Accuracy",
+      "dayStreak": "Day Streak"
+    },
+    "recentQuestions": {
+      "title": "Mga Kamakailang Tanong",
+      "description": "Ang inyong pinakabagong mga tanong at AI answers"
+    }
+  },
+
+  "settings": {
+    "title": "Settings",
+    "subtitle": "I-manage ang inyong account, billing, at preferences", 
+    "tabs": {
+      "profile": "Profile",
+      "billing": "Billing",
+      "usage": "Usage"
+    },
+    "profile": {
+      "title": "Profile Information",
+      "description": "I-update ang inyong account details at preferences",
+      "email": "Email Address",
+      "displayName": "Display Name",
+      "language": "Wika / Locale", 
+      "saveChanges": "I-save ang mga Pagbabago"
+    }
+  },
+
+  "errors": {
+    "generic": "May nangyaring mali. Subukan ulit.",
+    "network": "Network error. I-check ang inyong connection at subukan ulit.",
+    "unauthorized": "Kailangan ninyong mag-login para ma-access ang feature na ito."
+  },
+
+  "time": {
+    "justNow": "Ngayon lang",
+    "minutesAgo": "{count} minuto ang nakalipas", 
+    "hoursAgo": "{count} oras ang nakalipas",
+    "daysAgo": "{count} araw ang nakalipas"
+  }
+}

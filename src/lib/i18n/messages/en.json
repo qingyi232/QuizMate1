@@ -1,0 +1,365 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success", 
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "retry": "Retry",
+    "refresh": "Refresh",
+    "upgrade": "Upgrade",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "continue": "Continue"
+  },
+
+  "navigation": {
+    "home": "Home",
+    "quiz": "Quiz", 
+    "dashboard": "Dashboard",
+    "settings": "Settings",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "login": "Sign In",
+    "register": "Get Started",
+    "logout": "Sign Out"
+  },
+
+  "landing": {
+    "hero": {
+      "title": "QuizMate – Your AI Study Buddy",
+      "subtitle": "Paste questions. Get instant explanations & flashcards.",
+      "cta": "Start Free"
+    },
+    "features": {
+      "lowCost": {
+        "title": "Low Cost",
+        "description": "Get AI-powered study help without breaking the bank. Free tier available."
+      },
+      "multilingual": {
+        "title": "Multi-language", 
+        "description": "Study in English, Indonesian, Filipino, or Swahili with native AI support."
+      },
+      "offline": {
+        "title": "Offline Review",
+        "description": "Download flashcards for offline study sessions anywhere, anytime."
+      }
+    },
+    "pricing": {
+      "title": "Simple, transparent pricing",
+      "subtitle": "Choose the plan that works for you",
+      "free": {
+        "title": "Free",
+        "price": "$0",
+        "period": "forever",
+        "features": [
+          "5 questions per day",
+          "Basic AI explanations", 
+          "Standard flashcards",
+          "Community support"
+        ]
+      },
+      "pro": {
+        "title": "Pro", 
+        "price": "$2.99",
+        "period": "per month",
+        "features": [
+          "Unlimited questions",
+          "Priority AI processing",
+          "Advanced flashcards",
+          "Detailed analytics",
+          "Priority support",
+          "Early access to new features"
+        ],
+        "popular": "Most Popular"
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "How accurate are the AI explanations?",
+          "answer": "Our AI provides highly accurate explanations using advanced models. However, we recommend verifying critical information with official sources."
+        },
+        {
+          "question": "What languages are supported?",
+          "answer": "We support English, Indonesian (Bahasa Indonesia), Filipino, and Swahili for both input and output."
+        },
+        {
+          "question": "Can I use this offline?",
+          "answer": "While AI generation requires internet, you can download and review flashcards offline using our mobile app."
+        },
+        {
+          "question": "How does the free plan work?",
+          "answer": "Free users get 5 AI-generated answers per day. This resets every 24 hours at midnight UTC."
+        },
+        {
+          "question": "What file formats are supported?",
+          "answer": "Currently we support .txt and .pdf files. We're working on adding support for more formats."
+        },
+        {
+          "question": "Can I cancel my subscription anytime?",
+          "answer": "Yes, you can cancel your Pro subscription at any time. You'll continue to have access until the end of your billing period."
+        },
+        {
+          "question": "Is my data secure?",
+          "answer": "Yes, we use industry-standard encryption and don't store unnecessary personal information. You can delete your data anytime."
+        }
+      ]
+    }
+  },
+
+  "auth": {
+    "login": {
+      "title": "Welcome back",
+      "subtitle": "Sign in to your account to continue learning",
+      "email": "Email address",
+      "password": "Password",
+      "submit": "Sign In",
+      "forgotPassword": "Forgot your password?",
+      "noAccount": "Don't have an account?",
+      "signUp": "Sign up",
+      "orContinueWith": "Or continue with",
+      "google": "Continue with Google"
+    },
+    "register": {
+      "title": "Create your account",
+      "subtitle": "Join thousands of students improving their learning with AI",
+      "name": "Full name",
+      "email": "Email address", 
+      "password": "Password",
+      "confirmPassword": "Confirm password",
+      "submit": "Create Account",
+      "hasAccount": "Already have an account?",
+      "signIn": "Sign in",
+      "terms": "By creating an account, you agree to our Terms of Service and Privacy Policy."
+    },
+    "resetPassword": {
+      "title": "Reset your password",
+      "subtitle": "Enter your email address and we'll send you a link to reset your password",
+      "email": "Email address",
+      "submit": "Send Reset Link",
+      "backToLogin": "Back to sign in",
+      "success": "Password reset link has been sent to your email."
+    },
+    "newPassword": {
+      "title": "Set new password",
+      "subtitle": "Enter your new password below",
+      "password": "New password",
+      "confirmPassword": "Confirm new password",
+      "submit": "Update Password",
+      "success": "Your password has been updated successfully."
+    }
+  },
+
+  "quiz": {
+    "title": "AI Study Assistant", 
+    "subtitle": "Get instant explanations and flashcards for any question",
+    "form": {
+      "questionText": "Question Text",
+      "questionPlaceholder": "Enter your question here... (max 4000 characters)",
+      "orUploadFile": "Or Upload File",
+      "uploadDescription": "Click to upload .txt or .pdf file",
+      "maxFileSize": "Maximum file size: 10MB",
+      "language": "Language",
+      "autoDetect": "Auto-detect",
+      "subject": "Subject (optional)",
+      "subjectPlaceholder": "e.g. Mathematics", 
+      "grade": "Grade (optional)",
+      "gradePlaceholder": "e.g. Grade 10",
+      "generate": "Generate Answer"
+    },
+    "generating": "Generating Answer...",
+    "usage": {
+      "remaining": "questions remaining today",
+      "upgradeRequired": "Daily limit reached. Please upgrade to Pro for unlimited access."
+    },
+    "result": {
+      "answer": "Answer",
+      "explanation": "Explanation", 
+      "flashcards": "Flashcards",
+      "cached": "Cached",
+      "confidence": "confident",
+      "showFlashcards": "Show",
+      "hideFlashcards": "Hide",
+      "saveFlashcards": "Save Flashcards",
+      "flashcardsSaved": "Flashcards saved successfully!",
+      "front": "Front:",
+      "back": "Back:",
+      "hint": "Hint:",
+      "difficulty": "Difficulty:"
+    },
+    "empty": {
+      "title": "Ready to help you learn",
+      "description": "Enter a question above to get instant AI-powered explanations and flashcards."
+    },
+    "errors": {
+      "emptyQuestion": "Please enter a question or upload a file",
+      "fileTooLarge": "File size must be less than 10MB",
+      "invalidFileType": "Please select a .txt or .pdf file",
+      "networkError": "Network error. Please try again.",
+      "moderationError": "Content was flagged by our safety system. Please try a different question.",
+      "limitReached": "Daily limit reached. Please upgrade to Pro for unlimited access."
+    }
+  },
+
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Track your learning progress and continue studying",
+    "newQuestion": "New Question",
+    "stats": {
+      "thisWeek": "This Week",
+      "cardsStudied": "Cards Studied", 
+      "accuracy": "Accuracy",
+      "dayStreak": "Day Streak"
+    },
+    "recentQuestions": {
+      "title": "Recent Questions",
+      "description": "Your latest questions and AI answers",
+      "askNew": "Ask New",
+      "empty": {
+        "title": "No questions yet",
+        "description": "Start by asking your first question to get AI-powered explanations.",
+        "cta": "Ask Your First Question"
+      },
+      "cards": "cards"
+    },
+    "flashcardsReview": {
+      "title": "Ready for Review",
+      "description": "Flashcards scheduled for spaced repetition",
+      "startReview": "Start Review Session",
+      "empty": "No cards due for review"
+    },
+    "quickActions": {
+      "title": "Quick Actions",
+      "askQuestion": "Ask New Question",
+      "reviewFlashcards": "Review Flashcards", 
+      "viewStats": "View Statistics",
+      "manageAccount": "Manage Account"
+    },
+    "progress": {
+      "title": "Progress Overview",
+      "questionsThisWeek": "Questions This Week",
+      "averageAccuracy": "Average Accuracy",
+      "totalQuestions": "Total Questions",
+      "totalCards": "Total Cards"
+    }
+  },
+
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Manage your account, billing, and preferences", 
+    "backToDashboard": "Back to Dashboard",
+    "tabs": {
+      "profile": "Profile",
+      "billing": "Billing",
+      "usage": "Usage"
+    },
+    "profile": {
+      "title": "Profile Information",
+      "description": "Update your account details and preferences",
+      "email": "Email Address",
+      "emailHelp": "Email cannot be changed. Contact support if needed.",
+      "displayName": "Display Name",
+      "displayNamePlaceholder": "Enter your display name",
+      "language": "Language / Locale", 
+      "memberSince": "Member Since",
+      "saveChanges": "Save Changes",
+      "saving": "Saving...",
+      "saved": "Profile updated successfully!"
+    },
+    "billing": {
+      "title": "Subscription & Billing",
+      "description": "Manage your subscription and payment methods",
+      "freePlan": "Free Plan",
+      "proPlan": "Pro Plan",
+      "upgrade": {
+        "title": "Upgrade to Pro",
+        "description": "Get unlimited questions, priority AI processing, and advanced features.",
+        "features": {
+          "unlimited": "Unlimited daily questions",
+          "priority": "Priority processing",
+          "analytics": "Advanced analytics", 
+          "support": "Priority support"
+        },
+        "price": "$2.99",
+        "period": "/ month",
+        "button": "Upgrade to Pro"
+      },
+      "active": {
+        "title": "Pro Plan Active",
+        "status": "Status",
+        "nextBilling": "Next Billing Date",
+        "manageBilling": "Manage Billing"
+      },
+      "features": {
+        "dailyQuestions": "Daily Questions",
+        "unlimited": "Unlimited",
+        "perDay": "Per day",
+        "aiModel": "AI Model", 
+        "priorityAccess": "Priority access",
+        "standardAccess": "Standard access"
+      }
+    },
+    "usage": {
+      "title": "Usage Statistics",
+      "description": "Monitor your API usage and costs",
+      "today": {
+        "title": "Today's Usage",
+        "questions": "Questions",
+        "cacheHits": "Cache Hits",
+        "tokens": "Tokens",
+        "cost": "Cost"
+      },
+      "monthly": {
+        "title": "Monthly Usage",
+        "totalRequests": "Total Requests",
+        "totalTokens": "Total Tokens", 
+        "totalCost": "Total Cost"
+      },
+      "empty": {
+        "title": "No usage data available",
+        "description": "Start using QuizMate to see your usage statistics here."
+      }
+    }
+  },
+
+  "usage": {
+    "loading": "Loading usage...",
+    "remaining": "remaining",
+    "upgradeAvailable": "Upgrade Available",
+    "details": {
+      "title": "Usage Statistics",
+      "description": "Track your QuizMate usage and performance"
+    },
+    "plan": {
+      "free": "Free Plan",
+      "pro": "Pro Plan"
+    }
+  },
+
+  "errors": {
+    "generic": "Something went wrong. Please try again.",
+    "network": "Network error. Please check your connection and try again.",
+    "unauthorized": "You need to be logged in to access this feature.",
+    "forbidden": "You don't have permission to access this resource.",
+    "notFound": "The requested resource was not found.",
+    "validation": "Please check your input and try again.",
+    "server": "Server error. Our team has been notified."
+  },
+
+  "time": {
+    "justNow": "Just now",
+    "minutesAgo": "{count} minutes ago", 
+    "hoursAgo": "{count} hours ago",
+    "daysAgo": "{count} days ago",
+    "weeksAgo": "{count} weeks ago",
+    "monthsAgo": "{count} months ago"
+  }
+}

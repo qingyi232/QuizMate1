@@ -1,0 +1,11 @@
+content,subject,grade,language,answer,explanation,tags
+"According to Porter's Five Forces model, which of the following is NOT one of the competitive forces?
+A) Threat of new entrants
+B) Bargaining power of suppliers
+C) Threat of substitute products
+D) Corporate social responsibility","Business Strategy","MBA","en","D) Corporate social responsibility","Porter's Five Forces include: threat of new entrants, bargaining power of suppliers, bargaining power of buyers, threat of substitute products, and rivalry among existing competitors. CSR is not one of these forces.","business-strategy,porter,competitive-analysis,management"
+"财务管理中，净现值(NPV)为正说明什么？
+A) 项目不可行
+B) 项目刚好可行
+C) 项目可行，能创造价值
+D) 需要更多信息判断","财务管理","MBA","zh-CN","C) 项目可行，能创造价值","净现值(Net Present Value, NPV)大于零表明项目的现金流入现值大于现金流出现值，项目能够创造价值，投资决策应该接受该项目。","财务管理,投资决策,净现值,价值创造"

@@ -1,0 +1,612 @@
+QuizMate 全站 UI 风格与文案（中文版）
+🎨 整体风格
+
+主色调：科技蓝 (#2563eb) + 活力绿 (#22c55e)，带渐变背景
+
+辅助色：紫色 (#7c3aed) + 橙色 (#f59e0b)，用于按钮高亮
+
+字体：清晰现代（默认 Tailwind + Inter）
+
+UI 元素：卡片化、圆角（rounded-2xl）、柔和阴影、留白感强
+
+动效：
+
+页面加载 → 淡入/滑入
+
+鼠标悬停 → 按钮渐变/放大
+
+Section → 滚动时轻微浮动/缩放
+
+数字 → 计数器动画
+
+🏠 首页（Home）
+Hero Section
+
+标题：
+你的 AI 学习伙伴
+
+副标题：
+智能解析题目，快速掌握知识点。让学习变得更轻松、更高效。
+
+CTA 按钮：
+
+[免费开始]（主按钮，渐变蓝绿）
+
+[观看演示]（次按钮，边框 + hover 高亮）
+
+动效：渐变背景流动感，按钮 hover 动态发光
+
+功能亮点（Features）
+
+三列卡片，每张卡片有图标 + 动效：
+
+AI 驱动的解析
+每道题目都有详细讲解，帮助你真正理解，而不是死记硬背。
+
+多语言支持
+支持英语、印尼语、菲律宾语、斯瓦西里语，未来更多。
+
+智能测验模式
+自动生成 Quiz，边学边练，提升记忆效率。
+
+Demo Section
+
+中心大卡片：展示一道题目解析的 UI 截图（可占位）
+
+文案：
+从问题到答案，只需几秒钟。
+让 AI 帮你节省 70% 的学习时间。
+
+学生评价（Testimonials）
+
+标题：
+深受全球学生信赖
+
+动态轮播：
+
+⭐⭐⭐⭐⭐ 4.9/5 来自 10,000+ 学生
+
+引用语：「QuizMate 让我通过了期末考试！」
+
+定价（Pricing）
+
+两列卡片，Pro 高亮：
+
+免费版
+✅ 每日 5 次 AI 解析
+✅ 基础题库访问
+✅ 多语言支持
+[立即免费使用]
+
+Pro 高级版
+✅ 无限解析
+✅ 专属学习报告
+✅ 考试模式 + AI 模拟测试
+✅ 优先客服支持
+[升级到 Pro]
+
+FAQ（Accordion）
+
+QuizMate 如何工作？
+
+是否支持离线？
+
+我能上传 PDF 试卷吗？
+
+如何取消订阅？
+
+Footer
+
+左侧：Logo + 简短介绍
+
+中间：页面导航（首页 / 功能 / 定价 / FAQ / 关于我们）
+
+右侧：社交图标（Twitter, LinkedIn, YouTube）
+
+📑 功能页面（Features）
+
+展示具体功能，分为模块卡片：
+
+题目解析（图标：书本）
+
+知识点总结（图标：灯泡）
+
+智能测验（图标：问号）
+
+学习报告（图标：图表）
+
+动效：卡片 hover 上浮 + 阴影加深
+
+💰 定价页面（Pricing）
+
+和首页一致，但更详细：
+
+对比表格（Free vs Pro vs 教育机构版）
+
+动画数字切换（价格按月/按年）
+
+🎓 学生案例（Case Studies）
+
+多张卡片，展示不同国家的学生案例
+
+每张卡片：学生照片占位 + 一句话推荐语 + 国家旗帜
+
+❓ FAQ 页面
+
+Accordion 折叠效果，带图标旋转动画
+
+👥 关于我们（About）
+
+公司使命：
+让全球学生都能享受 AI 驱动的高效学习。
+
+团队介绍（占位头像卡片）
+
+加入我们（招聘按钮）
+
+🔑 登录/注册页面
+
+左侧插画（学习场景）
+
+右侧卡片表单（圆角 + 阴影）
+
+动效：输入框聚焦时高亮
+
+📚 学习空间（Dashboard）
+
+左侧导航（题库 / 我的解析 / 测验 / 设置）
+
+右侧内容区：
+
+卡片式题目解析
+
+学习进度条
+
+今日学习时间计数器
+
+动效：进度条动画增长，卡片淡入
+
+
+全局UI风格指南：
+QuizMate 全局 UI 风格指南
+1. 颜色体系（Tailwind 配色）
+// tailwind.config.js
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          DEFAULT: "#2563EB", // 主色：蓝色 (按钮/标题)
+          light: "#60A5FA",   // 浅蓝 (hover)
+          dark: "#1E40AF",    // 深蓝 (active)
+        },
+        secondary: {
+          DEFAULT: "#10B981", // 绿色 (成长/进步)
+          light: "#6EE7B7",
+          dark: "#047857",
+        },
+        accent: {
+          purple: "#8B5CF6",  // 辅助紫色 (错题/统计)
+          orange: "#F97316",  // 辅助橙色 (提示/强调)
+        },
+        gray: {
+          50: "#F9FAFB",
+          100: "#F3F4F6",
+          200: "#E5E7EB",
+          600: "#4B5563",
+          800: "#1F2937",
+        },
+      },
+    },
+  },
+};
+
+
+📌 应用场景：
+
+主色（蓝色）：按钮、标题、Logo
+
+辅色（绿色）：进度条、正确答案、成长指标
+
+强调色（紫/橙）：错题本、提示框、特殊按钮
+
+灰色：背景、分隔线、文字说明
+
+2. 字体与排版
+
+字体：Inter, Roboto, sans-serif（国际常用 SaaS 字体）
+
+标题（Heading）：粗体 + 渐变文字（蓝 → 绿）
+
+正文（Body）：中灰色 (#4B5563)，舒适行距 leading-relaxed
+
+按钮（Button）：大圆角 rounded-xl，字重大 font-semibold
+
+3. 动效标准（Framer Motion）
+卡片动效
+<motion.div
+  whileHover={{ scale: 1.05, boxShadow: "0px 10px 20px rgba(0,0,0,0.1)" }}
+  transition={{ type: "spring", stiffness: 200 }}
+>
+  {/* 卡片内容 */}
+</motion.div>
+
+页面进入动画
+<motion.div
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+>
+  {/* 页面内容 */}
+</motion.div>
+
+按钮点击反馈
+<motion.button
+  whileTap={{ scale: 0.95 }}
+  whileHover={{ scale: 1.05 }}
+>
+  点击我
+</motion.button>
+
+4. 组件风格标准
+
+卡片 Card
+
+大圆角 rounded-2xl
+
+阴影柔和 shadow-lg
+
+内边距 p-6
+
+悬浮时背景微变 hover:bg-gray-50
+
+按钮 Button
+
+主按钮：蓝色渐变
+
+bg-gradient-to-r from-blue-500 to-green-500
+text-white font-semibold rounded-xl
+shadow-md hover:shadow-xl
+
+
+次按钮：灰边框 + hover 蓝色边框
+
+输入框 Input
+
+大圆角 rounded-xl
+
+边框浅灰，focus 时变蓝 focus:ring-2 focus:ring-primary
+
+5. 布局风格
+
+最大宽度：max-w-7xl mx-auto
+
+栅格：grid grid-cols-1 md:grid-cols-3 gap-8
+
+内边距：页面 px-6 py-20，组件 p-6
+
+整体感：大留白，呼吸感强
+
+6. 背景效果
+
+首页、定价页、Dashboard 用渐变背景：
+
+bg-gradient-to-b from-white to-blue-50
+
+
+Footer 用强烈渐变：
+
+bg-gradient-to-r from-blue-600 to-green-500
+
+
+可加 动态光影背景（粒子/波浪效果） 增加科技感。
+
+🚀 使用方法
+
+在 globals.css 里引入字体（Google Fonts Inter/Roboto）。
+
+把 tailwind.config.js 的颜色配置复制进去。
+
+所有 UI 组件（按钮、卡片、输入框）都遵循上面定义的风格。
+
+Cursor 生成页面时，直接用这些标准，就能保持 统一的高级感。
+
+首页代码（带粒子动效）
+"use client";
+
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import Particles from "@/components/Particles";
+
+export default function HomePage() {
+  return (
+    <div className="relative min-h-screen overflow-hidden bg-gradient-to-b from-white to-blue-50">
+      {/* 粒子动效背景 */}
+      <Particles className="absolute inset-0 z-0" quantity={80} />
+
+      {/* Hero 区域 */}
+      <section className="relative z-10 text-center max-w-4xl mx-auto px-6 pt-32 pb-20">
+        <motion.h1
+          className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-blue-600 via-green-500 to-teal-400 bg-clip-text text-transparent"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          QuizMate · 你的 AI 学习伙伴
+        </motion.h1>
+
+        <motion.p
+          className="mt-6 text-lg text-gray-600 leading-relaxed"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+        >
+          借助 AI 的力量，高效刷题、智能解答、个性化学习。
+          让学习更轻松，让考试更简单。
+        </motion.p>
+
+        <motion.div
+          className="mt-8 flex justify-center gap-4"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.8 }}
+        >
+          <Link href="/dashboard">
+            <Button className="px-6 py-3 text-lg rounded-xl bg-gradient-to-r from-blue-500 to-green-500 text-white shadow-lg hover:shadow-xl">
+              立即开始学习
+            </Button>
+          </Link>
+          <Link href="/features">
+            <Button
+              variant="outline"
+              className="px-6 py-3 text-lg rounded-xl border-2 border-blue-500 text-blue-600 hover:bg-blue-50"
+            >
+              查看功能
+            </Button>
+          </Link>
+        </motion.div>
+      </section>
+
+      {/* 功能区块 */}
+      <section className="relative z-10 max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-3 gap-8">
+        {[
+          {
+            title: "AI 智能解题",
+            desc: "秒懂解题思路，逐步讲解，像私人老师一样。",
+            icon: "💡",
+          },
+          {
+            title: "个性化题库",
+            desc: "根据学习情况推荐题目，让你事半功倍。",
+            icon: "📚",
+          },
+          {
+            title: "学习数据分析",
+            desc: "实时追踪正确率和学习曲线，清晰看到进步。",
+            icon: "📊",
+          },
+        ].map((item, i) => (
+          <motion.div
+            key={i}
+            className="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-2xl transition"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1 + i * 0.2 }}
+          >
+            <div className="text-5xl mb-4">{item.icon}</div>
+            <h3 className="text-xl font-bold text-gray-800 mb-2">
+              {item.title}
+            </h3>
+            <p className="text-gray-600">{item.desc}</p>
+          </motion.div>
+        ))}
+      </section>
+
+      {/* CTA 区块 */}
+      <section className="relative z-10 text-center px-6 py-20 bg-gradient-to-r from-blue-600 to-green-500 text-white">
+        <motion.h2
+          className="text-3xl md:text-4xl font-bold mb-6"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          准备好开启高效学习了吗？
+        </motion.h2>
+        <Link href="/pricing">
+          <Button className="px-8 py-4 text-lg rounded-xl bg-white text-blue-600 font-semibold shadow-md hover:shadow-xl">
+            立即注册 · 免费试用
+          </Button>
+        </Link>
+      </section>
+    </div>
+  );
+}
+
+🔧 粒子背景组件（Particles.tsx）
+"use client";
+
+import { useCallback } from "react";
+import Particles from "react-tsparticles";
+import type { Engine } from "tsparticles-engine";
+import { loadFull } from "tsparticles";
+
+export default function ParticleBackground({ className = "", quantity = 80 }) {
+  const particlesInit = useCallback(async (engine: Engine) => {
+    await loadFull(engine);
+  }, []);
+
+  return (
+    <Particles
+      id="tsparticles"
+      className={className}
+      init={particlesInit}
+      options={{
+        fullScreen: false,
+        background: { color: "transparent" },
+        particles: {
+          number: { value: quantity },
+          color: { value: "#2563EB" },
+          size: { value: 2 },
+          move: { enable: true, speed: 1 },
+          links: { enable: true, color: "#60A5FA", opacity: 0.3 },
+        },
+      }}
+    />
+  );
+}
+
+✨ 效果说明
+
+背景：粒子动效 + 渐变背景
+
+Hero：渐变大标题 + 按钮 hover 动效
+
+功能区：三列卡片，悬浮放大阴影
+
+CTA：强烈渐变背景，吸引用户注册
+
+Features 页面代码
+"use client";
+
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+
+export default function FeaturesPage() {
+  const features = [
+    {
+      title: "AI 智能解题",
+      desc: "支持选择题、填空题、主观题，AI 帮你逐步讲解解题思路，就像私人导师。",
+      icon: "🤖",
+    },
+    {
+      title: "个性化学习路径",
+      desc: "根据你的答题情况，自动推荐需要强化的知识点，让学习更高效。",
+      icon: "📈",
+    },
+    {
+      title: "多语种支持",
+      desc: "支持英语、印尼语、菲律宾语、斯瓦西里语，覆盖东南亚和非洲学习者。",
+      icon: "🌍",
+    },
+    {
+      title: "错题本 & 笔记",
+      desc: "错题自动收录，AI 自动生成笔记，帮助你复盘巩固。",
+      icon: "📝",
+    },
+    {
+      title: "题库导入",
+      desc: "支持上传 PDF/Word 题库，自动解析为可练习的题目格式。",
+      icon: "📚",
+    },
+    {
+      title: "学习数据分析",
+      desc: "实时追踪正确率、完成度、学习曲线，用数据驱动成长。",
+      icon: "📊",
+    },
+  ];
+
+  return (
+    <div className="relative min-h-screen bg-gradient-to-b from-white to-blue-50">
+      {/* 顶部介绍 */}
+      <section className="text-center max-w-4xl mx-auto px-6 pt-24 pb-16">
+        <motion.h1
+          className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-600 to-green-500 bg-clip-text text-transparent"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          功能亮点
+        </motion.h1>
+        <motion.p
+          className="mt-6 text-lg text-gray-600 leading-relaxed"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
+        >
+          QuizMate 让学习更智能 · 更高效 · 更轻松
+        </motion.p>
+      </section>
+
+      {/* 功能展示区 */}
+      <section className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {features.map((feature, i) => (
+          <motion.div
+            key={i}
+            className="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-2xl transition"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: i * 0.2 }}
+          >
+            <div className="text-5xl mb-4">{feature.icon}</div>
+            <h3 className="text-xl font-bold text-gray-800 mb-2">
+              {feature.title}
+            </h3>
+            <p className="text-gray-600">{feature.desc}</p>
+          </motion.div>
+        ))}
+      </section>
+
+      {/* CTA 区块 */}
+      <section className="text-center px-6 py-20 bg-gradient-to-r from-blue-600 to-green-500 text-white">
+        <motion.h2
+          className="text-3xl md:text-4xl font-bold mb-6"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          立即体验 QuizMate 的全部功能
+        </motion.h2>
+        <Link href="/pricing">
+          <Button className="px-8 py-4 text-lg rounded-xl bg-white text-blue-600 font-semibold shadow-md hover:shadow-xl">
+            开始免费试用
+          </Button>
+        </Link>
+      </section>
+    </div>
+  );
+}
+
+✨ 页面结构
+
+Hero 标题
+
+渐变大字「功能亮点」
+
+副标题说明「智能·高效·轻松」
+
+功能展示区
+
+6 个功能卡片（带 Emoji 图标）
+
+悬浮放大 + 阴影动效
+
+CTA 区块
+
+蓝绿渐变背景，白色大按钮
+
+引导去 定价页 Pricing
+
+🚀 Cursor 指令
+
+你丢给 Cursor 的提示词应该是这样的：
+
+帮我基于 Next.js + Tailwind + shadcn/ui + Framer Motion 设计一个完整的 QuizMate 学习平台 UI，包含以下页面：
+- 首页（Hero、功能、Demo、学生评价、定价、FAQ、Footer）
+- 功能页面
+- 定价页面
+- 学生案例页面
+- FAQ 页面
+- 关于我们页面
+- 登录/注册页面
+- 学习空间（Dashboard）
+
+要求：
+- 色彩鲜明（蓝色 + 绿色渐变主色，紫色橙色为辅助）
+- 国际化 SaaS 风格，卡片化、圆角、阴影、渐变按钮
+- 所有 Section 有进入动效，按钮和卡片有 hover 动效
+- 保证有呼吸感，padding 合理
+- 首页使用我提供的中文文案
+- 其他页面也填充好中文文案，保持简洁有力
+- 能够直接运行，不需要额外调整

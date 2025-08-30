@@ -1,0 +1,13 @@
+What is the largest planet in our solar system?
+
+解方程：x + 5 = 12
+
+True or False: The human heart has four chambers.
+
+Which programming language is known as the "language of the web"?
+A) Python  
+B) JavaScript
+C) Java
+D) C++
+
+列举三种可再生能源。

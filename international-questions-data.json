@@ -1,0 +1,382 @@
+[
+  {
+    "subject": "Mathematics",
+    "topic": "Algebra",
+    "difficulty": "easy",
+    "language": "en",
+    "question": "Solve for x: 3x + 7 = 22",
+    "question_type": "calculation",
+    "options": null,
+    "correct_answer": "x = 5",
+    "explanation": "Subtract 7 from both sides: 3x = 15, then divide by 3: x = 5",
+    "tags": ["linear_equations", "basic_algebra"],
+    "popularity_score": 95
+  },
+  {
+    "subject": "Mathematics", 
+    "topic": "Algebra",
+    "difficulty": "easy",
+    "language": "zh",
+    "question": "解方程：2x - 8 = 10",
+    "question_type": "calculation",
+    "options": null,
+    "correct_answer": "x = 9",
+    "explanation": "两边同时加8：2x = 18，再除以2：x = 9",
+    "tags": ["一元一次方程", "代数基础"],
+    "popularity_score": 90
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Geometry", 
+    "difficulty": "medium",
+    "language": "en",
+    "question": "Find the area of a circle with radius 6 cm",
+    "question_type": "calculation",
+    "options": null,
+    "correct_answer": "36π cm² ≈ 113.1 cm²",
+    "explanation": "Area = πr² = π × 6² = 36π cm²",
+    "tags": ["circles", "area", "geometry"],
+    "popularity_score": 88
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Calculus",
+    "difficulty": "hard", 
+    "language": "en",
+    "question": "Find the derivative of f(x) = x³ - 4x² + 5x - 2",
+    "question_type": "calculation",
+    "options": null,
+    "correct_answer": "f'(x) = 3x² - 8x + 5",
+    "explanation": "Using power rule: d/dx(xⁿ) = nxⁿ⁻¹, so f'(x) = 3x² - 8x + 5",
+    "tags": ["derivatives", "calculus", "power_rule"],
+    "popularity_score": 82
+  },
+  {
+    "subject": "Mathematics",
+    "topic": "Statistics_Probability",
+    "difficulty": "medium",
+    "language": "en", 
+    "question": "A coin is flipped 3 times. What is the probability of getting exactly 2 heads?",
+    "question_type": "calculation",
+    "options": {
+      "A": "1/8",
+      "B": "3/8", 
+      "C": "1/2",
+      "D": "2/3"
+    },
+    "correct_answer": "B",
+    "explanation": "Total outcomes: 2³ = 8. Favorable outcomes (HHT, HTH, THH): 3. Probability = 3/8",
+    "tags": ["probability", "combinations", "statistics"],
+    "popularity_score": 85
+  },
+
+  {
+    "subject": "Physics",
+    "topic": "Mechanics", 
+    "difficulty": "easy",
+    "language": "en",
+    "question": "A car travels 100 km in 2 hours. What is its average speed?",
+    "question_type": "calculation",
+    "options": {
+      "A": "25 km/h",
+      "B": "50 km/h",
+      "C": "75 km/h", 
+      "D": "100 km/h"
+    },
+    "correct_answer": "B",
+    "explanation": "Average speed = Total distance / Total time = 100 km / 2 h = 50 km/h",
+    "tags": ["speed", "motion", "kinematics"],
+    "popularity_score": 92
+  },
+  {
+    "subject": "Physics",
+    "topic": "Mechanics",
+    "difficulty": "medium",
+    "language": "en",
+    "question": "A ball is dropped from a height of 45 m. How long does it take to reach the ground? (g = 10 m/s²)",
+    "question_type": "calculation", 
+    "options": null,
+    "correct_answer": "3 seconds",
+    "explanation": "Using h = ½gt²: 45 = ½ × 10 × t², so t² = 9, therefore t = 3 seconds",
+    "tags": ["free_fall", "gravity", "kinematics"],
+    "popularity_score": 88
+  },
+  {
+    "subject": "Physics",
+    "topic": "Electromagnetism",
+    "difficulty": "hard",
+    "language": "en", 
+    "question": "Calculate the electric field at a point 0.05 m from a charge of 2.0 × 10⁻⁶ C",
+    "question_type": "calculation",
+    "options": null,
+    "correct_answer": "7.2 × 10⁶ N/C",
+    "explanation": "E = kq/r² = (9×10⁹ × 2×10⁻⁶) / (0.05)² = 18000 / 0.0025 = 7.2×10⁶ N/C",
+    "tags": ["electric_field", "coulomb_law", "electrostatics"],
+    "popularity_score": 75
+  },
+
+  {
+    "subject": "Chemistry",
+    "topic": "Inorganic",
+    "difficulty": "easy",
+    "language": "en",
+    "question": "What is the chemical formula for table salt?",
+    "question_type": "short_answer",
+    "options": {
+      "A": "NaCl",
+      "B": "KCl", 
+      "C": "CaCl₂",
+      "D": "MgCl₂"
+    },
+    "correct_answer": "A",
+    "explanation": "Table salt is sodium chloride, which has the chemical formula NaCl",
+    "tags": ["compounds", "formulas", "everyday_chemistry"],
+    "popularity_score": 94
+  },
+  {
+    "subject": "Chemistry", 
+    "topic": "Organic",
+    "difficulty": "medium",
+    "language": "en",
+    "question": "Which functional group is present in alcohols?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "-COOH",
+      "B": "-OH",
+      "C": "-NH₂", 
+      "D": "-CHO"
+    },
+    "correct_answer": "B",
+    "explanation": "Alcohols contain the hydroxyl functional group (-OH)",
+    "tags": ["functional_groups", "alcohols", "organic_chemistry"],
+    "popularity_score": 86
+  },
+  {
+    "subject": "Chemistry",
+    "topic": "Chemical_Equations", 
+    "difficulty": "medium",
+    "language": "en",
+    "question": "Balance the equation: ___Fe + ___O₂ → ___Fe₂O₃",
+    "question_type": "fill_blank",
+    "options": null,
+    "correct_answer": "4Fe + 3O₂ → 2Fe₂O₃",
+    "explanation": "Balance Fe atoms: 4 on left, 4 on right. Balance O atoms: 6 on left, 6 on right",
+    "tags": ["balancing_equations", "stoichiometry", "chemical_reactions"],
+    "popularity_score": 89
+  },
+
+  {
+    "subject": "Biology",
+    "topic": "Cell_Biology",
+    "difficulty": "easy",
+    "language": "en", 
+    "question": "What is the powerhouse of the cell?",
+    "question_type": "short_answer",
+    "options": {
+      "A": "Nucleus",
+      "B": "Mitochondria",
+      "C": "Ribosome",
+      "D": "Chloroplast"
+    },
+    "correct_answer": "B",
+    "explanation": "Mitochondria produce ATP through cellular respiration, earning them the nickname 'powerhouse of the cell'",
+    "tags": ["cell_organelles", "mitochondria", "energy"],
+    "popularity_score": 93
+  },
+  {
+    "subject": "Biology",
+    "topic": "Genetics",
+    "difficulty": "medium",
+    "language": "en",
+    "question": "If both parents are heterozygous for a trait (Aa), what percentage of offspring will be homozygous recessive?",
+    "question_type": "calculation",
+    "options": {
+      "A": "0%",
+      "B": "25%", 
+      "C": "50%",
+      "D": "75%"
+    },
+    "correct_answer": "B", 
+    "explanation": "Aa × Aa gives: AA (25%), Aa (50%), aa (25%). Homozygous recessive (aa) = 25%",
+    "tags": ["mendelian_genetics", "inheritance", "probability"],
+    "popularity_score": 84
+  },
+  {
+    "subject": "Biology",
+    "topic": "Ecology",
+    "difficulty": "easy",
+    "language": "en",
+    "question": "What process do plants use to convert sunlight into energy?", 
+    "question_type": "short_answer",
+    "options": {
+      "A": "Respiration",
+      "B": "Photosynthesis", 
+      "C": "Fermentation",
+      "D": "Transpiration"
+    },
+    "correct_answer": "B",
+    "explanation": "Photosynthesis converts sunlight, CO₂, and water into glucose and oxygen",
+    "tags": ["photosynthesis", "plants", "energy_conversion"],
+    "popularity_score": 91
+  },
+
+  {
+    "subject": "Computer_Science",
+    "topic": "Programming_Basics",
+    "difficulty": "easy",
+    "language": "en",
+    "question": "Which of the following is a correct variable name in most programming languages?",
+    "question_type": "multiple_choice", 
+    "options": {
+      "A": "2variable",
+      "B": "my-variable",
+      "C": "my_variable", 
+      "D": "my variable"
+    },
+    "correct_answer": "C",
+    "explanation": "Variable names cannot start with numbers, contain hyphens, or spaces. Underscores are allowed",
+    "tags": ["variables", "syntax", "programming"],
+    "popularity_score": 89
+  },
+  {
+    "subject": "Computer_Science",
+    "topic": "Algorithms",
+    "difficulty": "hard",
+    "language": "en",
+    "question": "What is the time complexity of binary search?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "O(1)",
+      "B": "O(log n)",
+      "C": "O(n)", 
+      "D": "O(n²)"
+    },
+    "correct_answer": "B",
+    "explanation": "Binary search eliminates half the search space each iteration, giving O(log n) complexity",
+    "tags": ["binary_search", "time_complexity", "algorithms"],
+    "popularity_score": 81
+  },
+  {
+    "subject": "Computer_Science", 
+    "topic": "Data_Structures",
+    "difficulty": "medium",
+    "language": "en",
+    "question": "Which data structure follows the LIFO (Last In, First Out) principle?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Queue",
+      "B": "Array", 
+      "C": "Stack",
+      "D": "Linked List"
+    },
+    "correct_answer": "C",
+    "explanation": "A stack follows LIFO - the last element added is the first one to be removed",
+    "tags": ["stack", "lifo", "data_structures"],
+    "popularity_score": 87
+  },
+
+  {
+    "subject": "English",
+    "topic": "Grammar",
+    "difficulty": "easy",
+    "language": "en", 
+    "question": "Choose the correct form: 'She _____ to school every day.'",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "go",
+      "B": "goes",
+      "C": "going", 
+      "D": "gone"
+    },
+    "correct_answer": "B",
+    "explanation": "Third person singular present tense uses 'goes'",
+    "tags": ["present_tense", "third_person", "grammar"],
+    "popularity_score": 90
+  },
+  {
+    "subject": "English",
+    "topic": "Vocabulary",
+    "difficulty": "medium",
+    "language": "en",
+    "question": "What does the word 'ubiquitous' mean?",
+    "question_type": "multiple_choice", 
+    "options": {
+      "A": "Very rare",
+      "B": "Everywhere at once",
+      "C": "Extremely large",
+      "D": "Highly technical"
+    },
+    "correct_answer": "B",
+    "explanation": "'Ubiquitous' means present, appearing, or found everywhere",
+    "tags": ["vocabulary", "advanced_words", "definitions"],
+    "popularity_score": 78
+  },
+  {
+    "subject": "English",
+    "topic": "Reading_Comprehension", 
+    "difficulty": "hard",
+    "language": "en",
+    "question": "In the sentence 'The author's tone in the passage is sardonic,' what does 'sardonic' most likely mean?",
+    "question_type": "multiple_choice",
+    "options": {
+      "A": "Cheerful and optimistic",
+      "B": "Scornfully mocking",
+      "C": "Deeply sorrowful",
+      "D": "Completely neutral"
+    },
+    "correct_answer": "B", 
+    "explanation": "'Sardonic' means grimly mocking or cynical, showing scornful humor",
+    "tags": ["literary_analysis", "tone", "vocabulary"],
+    "popularity_score": 74
+  },
+
+  {
+    "subject": "History",
+    "topic": "World_History",
+    "difficulty": "easy",
+    "language": "en",
+    "question": "In which year did World War II end?",
+    "question_type": "short_answer",
+    "options": {
+      "A": "1944", 
+      "B": "1945",
+      "C": "1946",
+      "D": "1947"
+    },
+    "correct_answer": "B",
+    "explanation": "World War II ended in 1945 with the surrender of Japan in September",
+    "tags": ["world_war_ii", "dates", "20th_century"],
+    "popularity_score": 93
+  },
+  {
+    "subject": "History",
+    "topic": "Geography",
+    "difficulty": "easy", 
+    "language": "en",
+    "question": "What is the capital of Australia?",
+    "question_type": "short_answer",
+    "options": {
+      "A": "Sydney",
+      "B": "Melbourne", 
+      "C": "Canberra",
+      "D": "Perth"
+    },
+    "correct_answer": "C",
+    "explanation": "Canberra is the capital city of Australia, located between Sydney and Melbourne",
+    "tags": ["world_capitals", "geography", "australia"],
+    "popularity_score": 88
+  },
+  {
+    "subject": "History",
+    "topic": "Politics",
+    "difficulty": "medium",
+    "language": "en",
+    "question": "What type of government system has three branches: executive, legislative, and judicial?",
+    "question_type": "short_answer", 
+    "options": null,
+    "correct_answer": "Separation of powers / Constitutional democracy",
+    "explanation": "This describes the separation of powers principle found in constitutional democracies",
+    "tags": ["government", "separation_of_powers", "democracy"],
+    "popularity_score": 82
+  }
+]

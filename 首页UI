@@ -1,0 +1,193 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
+
+export default function HomePage() {
+  return (
+    <div className="bg-gradient-to-b from-blue-50 to-white text-gray-800">
+      {/* Hero Section */}
+      <section className="text-center py-24 px-6">
+        <motion.h1
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-5xl font-bold text-blue-600 mb-6"
+        >
+          你的 AI 学习伙伴
+        </motion.h1>
+        <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+          智能解析题目，快速掌握知识点。让学习变得更轻松、更高效。
+        </p>
+        <div className="flex justify-center gap-4">
+          <Button className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-6 py-3 rounded-xl shadow-lg hover:scale-105 transition">
+            免费开始
+          </Button>
+          <Button variant="outline" className="px-6 py-3 rounded-xl">
+            观看演示
+          </Button>
+        </div>
+      </section>
+
+      {/* 功能亮点 */}
+      <section className="py-16 px-6 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        {[
+          {
+            title: "AI 驱动的解析",
+            desc: "每道题目都有详细讲解，帮助你真正理解，而不是死记硬背。",
+          },
+          {
+            title: "多语言支持",
+            desc: "支持英语、印尼语、菲律宾语、斯瓦西里语，未来更多。",
+          },
+          {
+            title: "智能测验模式",
+            desc: "自动生成 Quiz，边学边练，提升记忆效率。",
+          },
+        ].map((f, i) => (
+          <motion.div
+            key={i}
+            whileHover={{ scale: 1.05 }}
+            className="bg-white shadow-md rounded-2xl p-6 text-center"
+          >
+            <h3 className="text-xl font-semibold text-blue-600 mb-4">{f.title}</h3>
+            <p className="text-gray-600">{f.desc}</p>
+          </motion.div>
+        ))}
+      </section>
+
+      {/* Demo Section */}
+      <section className="text-center py-20 px-6 bg-gradient-to-r from-blue-100 to-green-100">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="text-3xl font-bold mb-6"
+        >
+          从问题到答案，只需几秒钟
+        </motion.h2>
+        <p className="text-gray-700 mb-8">
+          让 AI 帮你节省 <span className="font-semibold">70%</span> 的学习时间。
+        </p>
+        <div className="mx-auto max-w-2xl">
+          <Card className="rounded-2xl shadow-lg">
+            <CardContent className="p-6">
+              <p className="text-gray-600">
+                示例题目：在一个直角三角形中，两条直角边分别为 3 和 4，斜边是多少？
+              </p>
+              <div className="mt-4 bg-gray-50 p-4 rounded-xl">
+                <p className="font-semibold">AI 解析：</p>
+                <p className="text-gray-700">
+                  使用勾股定理：√(3² + 4²) = √25 = 5。
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* 学生评价 */}
+      <section className="py-20 px-6 max-w-5xl mx-auto text-center">
+        <h2 className="text-3xl font-bold mb-8">深受全球学生信赖</h2>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="bg-white shadow-md rounded-2xl p-6"
+        >
+          <p className="text-gray-600 italic mb-4">
+            「QuizMate 让我通过了期末考试！太神奇了！」
+          </p>
+          <p className="font-semibold">⭐⭐⭐⭐⭐ 4.9/5 来自 10,000+ 学生</p>
+        </motion.div>
+      </section>
+
+      {/* 定价 */}
+      <section className="py-20 px-6 bg-gradient-to-b from-blue-50 to-white">
+        <h2 className="text-3xl font-bold text-center mb-12">定价方案</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <Card className="rounded-2xl shadow-lg p-6 text-center">
+            <h3 className="text-xl font-semibold mb-4">免费版</h3>
+            <ul className="text-gray-600 mb-6 space-y-2">
+              <li>✅ 每日 5 次 AI 解析</li>
+              <li>✅ 基础题库访问</li>
+              <li>✅ 多语言支持</li>
+            </ul>
+            <Button className="bg-blue-500 text-white px-6 py-3 rounded-xl">立即使用</Button>
+          </Card>
+          <Card className="rounded-2xl shadow-lg p-6 text-center border-2 border-blue-500">
+            <h3 className="text-xl font-semibold text-blue-600 mb-4">Pro 高级版</h3>
+            <ul className="text-gray-600 mb-6 space-y-2">
+              <li>✅ 无限解析</li>
+              <li>✅ 专属学习报告</li>
+              <li>✅ 考试模式 + 模拟测试</li>
+              <li>✅ 优先客服支持</li>
+            </ul>
+            <Button className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-6 py-3 rounded-xl shadow-lg">
+              升级到 Pro
+            </Button>
+          </Card>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-20 px-6 max-w-4xl mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-8">常见问题</h2>
+        <Accordion type="single" collapsible className="space-y-4">
+          <AccordionItem value="q1">
+            <AccordionTrigger>QuizMate 如何工作？</AccordionTrigger>
+            <AccordionContent>
+              你只需要输入题目，AI 就会自动生成详细解析。
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="q2">
+            <AccordionTrigger>是否支持上传 PDF 试卷？</AccordionTrigger>
+            <AccordionContent>
+              支持上传 PDF、Word 文件，AI 将自动解析其中的问题。
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="q3">
+            <AccordionTrigger>是否支持多语言？</AccordionTrigger>
+            <AccordionContent>
+              支持英语、印尼语、菲律宾语、斯瓦西里语，未来还会支持更多。
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-gray-300 py-12">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+          <div>
+            <h3 className="text-white font-bold text-lg mb-4">QuizMate</h3>
+            <p>让全球学生享受 AI 驱动的高效学习。</p>
+          </div>
+          <div>
+            <h4 className="text-white font-semibold mb-4">导航</h4>
+            <ul className="space-y-2">
+              <li>首页</li>
+              <li>功能</li>
+              <li>定价</li>
+              <li>FAQ</li>
+              <li>关于我们</li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="text-white font-semibold mb-4">关注我们</h4>
+            <div className="flex space-x-4">
+              <span>🌐</span>
+              <span>🐦</span>
+              <span>📺</span>
+            </div>
+          </div>
+        </div>
+        <p className="text-center text-gray-500 mt-8">
+          © 2025 QuizMate. All rights reserved.
+        </p>
+      </footer>
+    </div>
+  );
+}

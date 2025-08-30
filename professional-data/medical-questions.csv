@@ -1,0 +1,11 @@
+content,subject,grade,language,answer,explanation,tags
+"Which of the following is the primary mechanism of action of ACE inhibitors?
+A) Calcium channel blockade
+B) Beta-adrenergic blockade
+C) Angiotensin-converting enzyme inhibition
+D) Diuretic effect","Medicine - Pharmacology","Medical School","en","C) Angiotensin-converting enzyme inhibition","ACE inhibitors work by blocking the angiotensin-converting enzyme, which prevents the conversion of angiotensin I to angiotensin II, leading to vasodilation and reduced blood pressure.","medicine,pharmacology,cardiology,hypertension"
+"医学影像学中，CT值的单位是什么？
+A) 亨斯菲尔德单位(HU)
+B) 毫西弗特(mSv)
+C) 贝克勒尔(Bq)
+D) 格雷(Gy)","医学影像学","医学院","zh-CN","A) 亨斯菲尔德单位(HU)","CT值以亨斯菲尔德单位(Hounsfield Unit, HU)为单位，用于表示不同组织对X射线的衰减程度。水的CT值定义为0 HU，空气约为-1000 HU，致密骨约为+1000 HU。","医学影像,CT,放射学,诊断"

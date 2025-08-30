@@ -1,0 +1,139 @@
+Layout 代码（带导航栏和底部）
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Button } from "@/components/ui/button";
+
+export default function Layout({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname();
+
+  const navLinks = [
+    { href: "/", label: "首页" },
+    { href: "/features", label: "功能介绍" },
+    { href: "/pricing", label: "定价方案" },
+    { href: "/dashboard", label: "学习空间" },
+  ];
+
+  return (
+    <div className="flex flex-col min-h-screen">
+      {/* 顶部导航栏 */}
+      <header className="sticky top-0 z-50 bg-white shadow-md">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+          {/* Logo */}
+          <Link href="/" className="text-2xl font-bold text-blue-600">
+            QuizMate
+          </Link>
+
+          {/* 导航 */}
+          <nav className="hidden md:flex space-x-6">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`${
+                  pathname === link.href ? "text-blue-600 font-semibold" : "text-gray-600"
+                } hover:text-blue-500 transition`}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+
+          {/* 登录按钮 */}
+          <div className="space-x-4">
+            <Link href="/auth">
+              <Button variant="outline" className="rounded-xl">
+                登录
+              </Button>
+            </Link>
+            <Link href="/auth">
+              <Button className="bg-blue-600 text-white rounded-xl">
+                免费注册
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </header>
+
+      {/* 页面内容 */}
+      <main className="flex-1">{children}</main>
+
+      {/* 底部 Footer */}
+      <footer className="bg-gradient-to-r from-blue-600 to-green-500 text-white py-12 mt-12">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+          {/* 品牌 */}
+          <div>
+            <h2 className="text-2xl font-bold mb-4">QuizMate</h2>
+            <p className="text-gray-200">
+              你的 AI 学习伙伴，帮你更高效地掌握知识，轻松通过考试。
+            </p>
+          </div>
+
+          {/* 导航 */}
+          <div>
+            <h3 className="font-semibold mb-4">快速导航</h3>
+            <ul className="space-y-2">
+              {navLinks.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="hover:underline">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* 联系方式 */}
+          <div>
+            <h3 className="font-semibold mb-4">联系我们</h3>
+            <ul className="space-y-2 text-gray-200">
+              <li>Email: support@quizmate.com</li>
+              <li>Twitter: @QuizMateAI</li>
+              <li>Facebook: QuizMate 官方</li>
+            </ul>
+          </div>
+
+          {/* 订阅 */}
+          <div>
+            <h3 className="font-semibold mb-4">订阅最新动态</h3>
+            <p className="text-gray-200 mb-2">
+              获取 QuizMate 的最新功能和学习技巧。
+            </p>
+            <input
+              type="email"
+              placeholder="输入邮箱"
+              className="w-full px-3 py-2 rounded-xl text-black mb-3"
+            />
+            <Button className="w-full bg-white text-blue-600 rounded-xl">
+              订阅
+            </Button>
+          </div>
+        </div>
+
+        <div className="text-center mt-8 text-gray-200">
+          © {new Date().getFullYear()} QuizMate. All rights reserved.
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+🔗 使用方式
+
+在 app/layout.tsx 里引入这个 Layout
+
+import Layout from "@/components/Layout";
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="zh">
+      <body>
+        <Layout>{children}</Layout>
+      </body>
+    </html>
+  );
+}
+
+
+每个页面（page.tsx）都会自动套上导航和底部。

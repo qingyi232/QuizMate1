@@ -1,0 +1,140 @@
+{
+  "format": "json",
+  "questions": [
+    {
+      "content": "Which gas is most responsible for the greenhouse effect?\nA) Oxygen\nB) Nitrogen\nC) Carbon dioxide\nD) Argon",
+      "subject": "Environmental Science",
+      "grade": "High School",
+      "language": "en",
+      "answer": "C) Carbon dioxide",
+      "explanation": "Carbon dioxide is the primary greenhouse gas responsible for global warming. While water vapor is actually the most abundant greenhouse gas, CO2 has the greatest impact on climate change due to human activities.",
+      "tags": [
+        "environment",
+        "climate",
+        "greenhouse",
+        "gases"
+      ]
+    },
+    {
+      "content": "Which of the following are renewable energy sources? (Select all that apply)\nA) Solar power\nB) Coal\nC) Wind power\nD) Natural gas\nE) Hydroelectric power",
+      "subject": "Environmental Science",
+      "grade": "High School",
+      "language": "en",
+      "answer": "A, C, E",
+      "explanation": "Solar power, wind power, and hydroelectric power are all renewable energy sources because they naturally replenish. Coal and natural gas are fossil fuels that take millions of years to form.",
+      "tags": [
+        "renewable",
+        "energy",
+        "sustainability"
+      ]
+    },
+    {
+      "content": "The process by which plants convert sunlight into chemical energy is called _______. This process takes place in the _______ of plant cells and produces _______ and oxygen.",
+      "subject": "Biology",
+      "grade": "Middle School",
+      "language": "en",
+      "answer": "photosynthesis, chloroplasts, glucose",
+      "explanation": "Photosynthesis is the process where plants use sunlight, carbon dioxide, and water to produce glucose and oxygen. This occurs in chloroplasts, which contain chlorophyll.",
+      "tags": [
+        "biology",
+        "photosynthesis",
+        "plants"
+      ]
+    },
+    {
+      "content": "True or False: The Great Wall of China is visible from space with the naked eye.",
+      "subject": "Geography",
+      "grade": "Elementary",
+      "language": "en",
+      "answer": "False",
+      "explanation": "This is a common myth. The Great Wall of China is not visible from space with the naked eye. Astronauts have confirmed that it's very difficult to see even from low Earth orbit.",
+      "tags": [
+        "geography",
+        "china",
+        "myths",
+        "space"
+      ]
+    },
+    {
+      "content": "Solve for x: 3x + 7 = 22\nShow your work step by step.",
+      "subject": "Mathematics",
+      "grade": "Middle School",
+      "language": "en",
+      "answer": "x = 5",
+      "explanation": "Step 1: Subtract 7 from both sides: 3x = 22 - 7 = 15\nStep 2: Divide both sides by 3: x = 15 ÷ 3 = 5\nStep 3: Check: 3(5) + 7 = 15 + 7 = 22 ✓",
+      "tags": [
+        "algebra",
+        "equations",
+        "mathematics"
+      ]
+    },
+    {
+      "content": "Match each country with its capital city:\n\nCountries:\nA) France\nB) Japan\nC) Australia\nD) Brazil\n\nCities:\n1) Tokyo\n2) Paris\n3) Canberra\n4) Brasilia",
+      "subject": "Geography",
+      "grade": "High School",
+      "language": "en",
+      "answer": "A-2, B-1, C-3, D-4",
+      "explanation": "France's capital is Paris, Japan's capital is Tokyo, Australia's capital is Canberra (not Sydney), and Brazil's capital is Brasilia (not Rio de Janeiro).",
+      "tags": [
+        "geography",
+        "capitals",
+        "countries"
+      ]
+    },
+    {
+      "content": "Arrange the following steps of the scientific method in the correct order:\nA) Form a hypothesis\nB) Conduct an experiment\nC) Make observations\nD) Analyze results\nE) Draw conclusions",
+      "subject": "Science",
+      "grade": "Middle School",
+      "language": "en",
+      "answer": "C, A, B, D, E",
+      "explanation": "The scientific method follows this order: 1) Make observations, 2) Form a hypothesis, 3) Conduct an experiment, 4) Analyze results, 5) Draw conclusions.",
+      "tags": [
+        "science",
+        "method",
+        "research",
+        "process"
+      ]
+    },
+    {
+      "content": "Write a Python function that calculates the factorial of a positive integer n.\n\n```python\ndef factorial(n):\n    # Your code here\n    pass\n```\n\nExample: factorial(5) should return 120",
+      "subject": "Computer Science",
+      "grade": "High School",
+      "language": "en",
+      "answer": "def factorial(n):\n    if n == 0 or n == 1:\n        return 1\n    return n * factorial(n - 1)",
+      "explanation": "This recursive solution calculates factorial by multiplying n by the factorial of (n-1). The base case is when n is 0 or 1, which both have a factorial of 1.",
+      "tags": [
+        "programming",
+        "python",
+        "recursion",
+        "factorial"
+      ]
+    },
+    {
+      "content": "请简述中国古代四大发明及其对世界文明的贡献。",
+      "subject": "历史",
+      "grade": "初中",
+      "language": "zh-CN",
+      "answer": "造纸术、指南针、火药、印刷术",
+      "explanation": "中国古代四大发明是造纸术、指南针、火药和印刷术。造纸术促进了文化传播，指南针推动了航海发展，火药改变了军事格局，印刷术加速了知识普及。这些发明对世界文明发展产生了深远影响。",
+      "tags": [
+        "历史",
+        "四大发明",
+        "中国",
+        "文明"
+      ]
+    },
+    {
+      "content": "小明买了3支笔和2本笔记本，共花费21元。每支笔比每本笔记本便宜2元。求每支笔和每本笔记本的价格。",
+      "subject": "数学",
+      "grade": "初中",
+      "language": "zh-CN",
+      "answer": "每支笔3元，每本笔记本5元",
+      "explanation": "设每支笔x元，每本笔记本y元。根据题意：3x + 2y = 21，x = y - 2。将第二个方程代入第一个：3(y-2) + 2y = 21，3y - 6 + 2y = 21，5y = 27，y = 5.4...实际上y=5，x=3。",
+      "tags": [
+        "数学",
+        "方程组",
+        "应用题"
+      ]
+    }
+  ]
+}

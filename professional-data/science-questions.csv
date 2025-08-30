@@ -1,0 +1,31 @@
+content,subject,grade,language,answer,explanation,tags
+"In quantum mechanics, what does Heisenberg's uncertainty principle state?
+A) Energy cannot be created or destroyed
+B) The position and momentum of a particle cannot both be precisely determined
+C) Light behaves as both wave and particle
+D) Matter and energy are interchangeable","Physics - Quantum Mechanics","University","en","B) The position and momentum of a particle cannot both be precisely determined","Heisenberg's uncertainty principle states that there is a fundamental limit to how precisely we can simultaneously know both the position and momentum of a particle. The more precisely one is determined, the less precisely the other can be known.","physics,quantum-mechanics,uncertainty-principle,heisenberg"
+"热力学第二定律可以表述为：
+A) 能量守恒
+B) 熵增原理
+C) 牛顿第二定律
+D) 质量守恒","热力学","大学","zh-CN","B) 熵增原理","热力学第二定律的一种表述是熵增原理：在孤立系统中，总熵永远不会减少。这说明了自然过程的不可逆性和能量品质的退化。","热力学,熵,物理定律,不可逆过程"
+"What is the electron configuration of a neutral carbon atom?
+A) 1s² 2s² 2p²
+B) 1s² 2s² 2p⁴
+C) 1s² 2s² 2p⁶
+D) 1s² 2s¹ 2p³","Chemistry","High School","en","A) 1s² 2s² 2p²","Carbon has 6 electrons. Following the aufbau principle, they fill orbitals in order of increasing energy: 1s² (2 electrons), 2s² (2 electrons), 2p² (2 electrons).","chemistry,electron-configuration,carbon,atomic-structure"
+"有机化学中，苯环的分子式是：
+A) C₆H₆
+B) C₆H₁₂
+C) C₆H₁₀
+D) C₆H₈","有机化学","大学","zh-CN","A) C₆H₆","苯(benzene)的分子式为C₆H₆，具有特殊的芳香性结构，6个碳原子形成正六边形，每个碳原子连接一个氢原子。","有机化学,苯,芳香烃,分子式"
+"Which organelle is responsible for protein synthesis in eukaryotic cells?
+A) Mitochondria
+B) Ribosomes
+C) Golgi apparatus
+D) Endoplasmic reticulum","Biology - Cell Biology","High School","en","B) Ribosomes","Ribosomes are the cellular organelles responsible for protein synthesis. They translate mRNA into proteins by linking amino acids together in the sequence specified by the genetic code.","biology,cell-biology,protein-synthesis,ribosomes"
+"DNA复制过程中，引物的作用是：
+A) 提供能量
+B) 连接DNA片段
+C) 为DNA聚合酶提供3'-OH起始端
+D) 修复DNA错误","分子生物学","大学","zh-CN","C) 为DNA聚合酶提供3'-OH起始端","引物(primer)是短的RNA序列，为DNA聚合酶提供带有3'-OH基团的起始端。DNA聚合酶只能在现有的3'-OH基团上添加新的核苷酸。","分子生物学,DNA复制,引物,DNA聚合酶"
