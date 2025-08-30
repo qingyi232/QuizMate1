@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { DOMESTIC_PAYMENT_CONFIG } from '@/config/domesticPayment'
-import { createClient } from '@/lib/db/supabase-server'
+import { createServiceClient } from '@/lib/db/supabase-server'
 import crypto from 'crypto'
 import axios from 'axios'
 
@@ -56,7 +56,7 @@ export async function POST(req: NextRequest) {
     }
 
     // 真实模式：检查数据库和发送短信
-    const supabase = await createClient()
+    const supabase = createServiceClient()
     
     // 检查是否频繁发送
     try {
@@ -84,7 +84,7 @@ export async function POST(req: NextRequest) {
       
       // 尝试保存验证码到数据库
       try {
-        const dbClient = await createClient()
+        const dbClient = createServiceClient()
         await dbClient
           .from('sms_codes')
           .insert({
@@ -133,7 +133,7 @@ export async function POST(req: NextRequest) {
       })
 
       // 保存验证码到数据库
-      const prodClient = await createClient()
+      const prodClient = createServiceClient()
       await prodClient
         .from('sms_codes')
         .insert({

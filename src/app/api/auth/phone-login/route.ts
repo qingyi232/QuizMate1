@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { createClient } from '@/lib/db/supabase-server'
+import { createServiceClient } from '@/lib/db/supabase-server'
 import jwt from 'jsonwebtoken'
 import { nanoid } from 'nanoid'
 
@@ -74,7 +74,7 @@ export async function POST(req: NextRequest) {
     }
 
     // 真实模式：完整验证流程
-    const supabase = await createClient()
+    const supabase = createServiceClient()
     
     // 验证短信验证码
     const { data: smsCode, error: smsError } = await supabase
