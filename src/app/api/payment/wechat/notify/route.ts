@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { DOMESTIC_PAYMENT_CONFIG } from '@/config/domesticPayment'
 import { createClient } from '@/lib/db/supabase-server'
-import crypto from 'crypto'
+// crypto will be imported dynamically
 
 // 微信支付签名验证
 function verifyWechatSign(params: Record<string, any>, apiKey: string): boolean {

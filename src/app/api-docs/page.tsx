@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -396,7 +398,4 @@ export default function ApiDocsPage() {
   )
 }
 
-export const metadata = {
-  title: 'API Documentation - QuizMate',
-  description: 'QuizMate API文档 - 详细的API参考、代码示例和集成指南，轻松集成AI分析功能到您的应用中。',
-}
+// Metadata moved to layout.tsx since this is a client component

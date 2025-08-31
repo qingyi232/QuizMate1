@@ -24,8 +24,8 @@ import { getServerPostHog, flush as flushAnalytics } from '@/lib/analytics/posth
 import { captureAPIError } from '@/lib/analytics/sentry'
 import { checkUserPermission, recordUsage } from '@/lib/permissions'
 
-// Configure Edge Runtime
-export const runtime = 'edge'
+// Configure Node.js Runtime for crypto support
+export const runtime = 'nodejs'
 
 /**
  * POST /api/generate - Generate AI answer for a question
@@ -324,7 +324,7 @@ export async function POST(req: NextRequest) {
         const supabase = createClient()
         
         // 生成错题本hash（避免重复）
-        const crypto = await import('crypto')
+        const crypto = require('crypto')
         const userQuestionHash = crypto
           .createHash('sha256')
           .update(normalizedText + (subject || '') + user.id)

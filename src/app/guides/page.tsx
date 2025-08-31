@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { Book, Clock, User, ArrowRight, BookOpen, Calculator, Flask, Dna, Globe, History, Code, FileText } from 'lucide-react'
+import { Book, Clock, User, ArrowRight, BookOpen, Calculator, Dna, Globe, History, Code, FileText } from 'lucide-react'
 
 const studyGuides = [
   {
@@ -15,7 +15,7 @@ const studyGuides = [
     color: 'bg-blue-100 text-blue-700 border-blue-200'
   },
   {
-    icon: Flask,
+    icon: Code,
     title: '化学学习攻略',
     description: '掌握化学基本概念，理解分子结构和化学反应',
     level: '中级',

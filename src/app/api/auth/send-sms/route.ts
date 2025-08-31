@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { DOMESTIC_PAYMENT_CONFIG } from '@/config/domesticPayment'
 import { createServiceClient } from '@/lib/db/supabase-server'
-import crypto from 'crypto'
+// crypto will be imported dynamically
 import axios from 'axios'
 
 // 生成6位数字验证码
@@ -10,7 +10,8 @@ function generateVerificationCode(): string {
 }
 
 // 阿里云短信签名生成
-function generateAliyunSignature(params: Record<string, any>, accessKeySecret: string): string {
+async function generateAliyunSignature(params: Record<string, any>, accessKeySecret: string): Promise<string> {
+  const crypto = await import('crypto')
   const sortedKeys = Object.keys(params).sort()
   const canonicalizedQueryString = sortedKeys
     .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(params[key])}`)
@@ -23,7 +24,7 @@ function generateAliyunSignature(params: Record<string, any>, accessKeySecret: s
 
 // 检查是否为演示模式
 function isDemo(): boolean {
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+  const supabaseUrl = process.env.SUPABASE_URL
   const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY
   return !supabaseUrl || supabaseUrl.includes('placeholder') || !supabaseKey || supabaseKey.includes('placeholder')
 }
@@ -126,7 +127,7 @@ export async function POST(req: NextRequest) {
         TemplateParam: JSON.stringify({ code })
       }
 
-      smsParams.Signature = generateAliyunSignature(smsParams, DOMESTIC_PAYMENT_CONFIG.sms.accessKeySecret)
+      smsParams.Signature = await generateAliyunSignature(smsParams, DOMESTIC_PAYMENT_CONFIG.sms.accessKeySecret)
 
       await axios.get(DOMESTIC_PAYMENT_CONFIG.sms.endpoint, {
         params: smsParams

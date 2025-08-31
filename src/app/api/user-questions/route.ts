@@ -207,7 +207,7 @@ export async function POST(req: NextRequest) {
     const supabase = await createClient()
 
     // 生成题目hash（用于去重）
-    const crypto = await import('crypto')
+    const crypto = require('crypto')
     const hash = crypto
       .createHash('sha256')
       .update(questionData.content + (questionData.subject || '') + user.id)

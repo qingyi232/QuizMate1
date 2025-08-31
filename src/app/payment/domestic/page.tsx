@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -11,7 +11,7 @@ import Image from 'next/image'
 
 type PaymentMethod = 'alipay' | 'wechat' | null
 
-export default function DomesticPaymentPage() {
+function DomesticPaymentContent() {
   const router = useRouter()
   const searchParams = useSearchParams()
   const [selectedMethod, setSelectedMethod] = useState<PaymentMethod>(null)
@@ -265,5 +265,13 @@ export default function DomesticPaymentPage() {
         </div>
       </div>
     </div>
+  )
+}
+
+export default function DomesticPaymentPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <DomesticPaymentContent />
+    </Suspense>
   )
 }

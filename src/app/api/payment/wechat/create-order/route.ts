@@ -3,7 +3,7 @@ import { DOMESTIC_PAYMENT_CONFIG, PlanType } from '@/config/domesticPayment'
 import { createClient } from '@/lib/db/supabase-server'
 import { getCurrentUser } from '@/lib/auth/auth'
 import { nanoid } from 'nanoid'
-import crypto from 'crypto'
+// crypto will be imported dynamically
 import axios from 'axios'
 
 // 微信支付签名函数

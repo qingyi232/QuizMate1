@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -8,7 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { authBrowser } from '@/lib/auth/auth-browser'
 import { Lock, AlertCircle, CheckCircle, Eye, EyeOff } from 'lucide-react'
 
-export default function ResetPasswordConfirmPage() {
+function ResetPasswordConfirmContent() {
   const router = useRouter()
   const searchParams = useSearchParams()
   
@@ -191,5 +191,13 @@ export default function ResetPasswordConfirmPage() {
         </div>
       </CardContent>
     </Card>
+  )
+}
+
+export default function ResetPasswordConfirmPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ResetPasswordConfirmContent />
+    </Suspense>
   )
 }

@@ -1,12 +1,26 @@
 import { NextRequest, NextResponse } from 'next/server'
 import Stripe from 'stripe'
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: '2024-06-20',
-})
+// 安全初始化Stripe
+const stripeSecretKey = process.env.STRIPE_SECRET_KEY
+let stripe: Stripe | null = null
+
+if (stripeSecretKey && stripeSecretKey !== 'sk_test_placeholder') {
+  stripe = new Stripe(stripeSecretKey, {
+    apiVersion: '2024-06-20',
+  })
+}
 
 export async function GET(request: NextRequest) {
   try {
+    // 检查Stripe是否可用
+    if (!stripe) {
+      return NextResponse.json(
+        { error: 'Stripe未配置' },
+        { status: 503 }
+      )
+    }
+    
     const { searchParams } = new URL(request.url)
     const sessionId = searchParams.get('session_id')
 

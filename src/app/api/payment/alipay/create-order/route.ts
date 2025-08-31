@@ -1,18 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server'
-import AlipaySdk from 'alipay-sdk'
 import { DOMESTIC_PAYMENT_CONFIG, PlanType } from '@/config/domesticPayment'
 import { createClient } from '@/lib/db/supabase-server'
 import { getCurrentUser } from '@/lib/auth/auth'
 import { nanoid } from 'nanoid'
 
-const alipaySdk = new AlipaySdk({
-  appId: DOMESTIC_PAYMENT_CONFIG.alipay.appId,
-  privateKey: DOMESTIC_PAYMENT_CONFIG.alipay.privateKey,
-  alipayPublicKey: DOMESTIC_PAYMENT_CONFIG.alipay.publicKey,
-  gateway: DOMESTIC_PAYMENT_CONFIG.alipay.gateway,
-  timeout: 5000,
-  camelCase: true,
-})
+// 暂时禁用Alipay SDK，使用占位符
+const alipaySdk = null as any
 
 export async function POST(req: NextRequest) {
   try {
